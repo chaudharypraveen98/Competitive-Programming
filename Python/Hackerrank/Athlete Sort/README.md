@@ -44,3 +44,5 @@ Check the sample below for clarity.
 ##### **Explanation 0**<br>
 
 The details are sorted based on the second attribute, since  is zero-indexed.
+
+Check Tutorial tab to know how to to solve.<br>Task<br>Given an integer, , perform the following conditional actions:<br><ul><li>If is odd, print Weird</li><li>If is even and in the inclusive range of to , print Not Weird</li><li>If is even and in the inclusive range of to , print Weird</li><li>If is even and greater than , print Not Weird</li></ul><br>
