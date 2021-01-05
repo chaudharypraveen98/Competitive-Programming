@@ -1,0 +1,2 @@
+## **[Concatenate](https://www.hackerrank.com/challenges/np-concatenate)** 
+Concatenate<br>Two or more arrays can be concatenated together using the concatenate function with a tuple of the arrays to be joined:<br>If an array has more than one dimension, it is possible to specify the axis along which multiple arrays are concatenated. By default, it is along the first dimension.<br><br><br><br>**Sample Input 0**<br><br>**Sample Output 0**<br><br>
