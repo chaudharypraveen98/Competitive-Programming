@@ -1,0 +1,3 @@
+## **[Arithmetic Operators](https://www.hackerrank.com/challenges/python-arithmetic-operators)** 
+Check Tutorial tab to know how to to solve.<br>Task
+The provided code stub reads two integers from STDIN, and . Add code to print three lines where:<br>Example<br>Print the following:<br><br>**Sample Input 0**<br><code></code><br><br>**Sample Output 0**<br><code></code><br><br>**Explanation 0**<br><br>

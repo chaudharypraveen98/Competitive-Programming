@@ -1,0 +1,3 @@
+## **[Any or All](https://www.hackerrank.com/challenges/any-or-all)** 
+This expression returns <code>True</code> if <strong>any</strong> element of the iterable is true. <br>
+If the iterable is empty, it will return <code>False</code>. <br>Code<br>This expression returns <code>True</code> if <strong>all</strong> of the elements of the iterable are true. If the iterable is empty, it will return <code>True</code>. <br><br><br><br><br>**Sample Input 0**<br><br>**Sample Output 0**<br><br><br>**Explanation 0**<br><br>

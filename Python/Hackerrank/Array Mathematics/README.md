@@ -1,0 +1,2 @@
+## **[Array Mathematics](https://www.hackerrank.com/challenges/np-array-mathematics)** 
+Basic mathematical functions operate element-wise on arrays. They are available both as operator overloads and as functions in the NumPy module.<br><br><br><br><br>**Sample Input 0**<br><br>**Sample Output 0**<br>Use <code>//</code> for division in Python 3.    <br><br>
