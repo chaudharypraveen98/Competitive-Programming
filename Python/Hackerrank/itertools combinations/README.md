@@ -1,0 +1,3 @@
+## **[itertools.combinations()](https://www.hackerrank.com/challenges/itertools-combinations)** 
+itertools.combinations(iterable, r)
+This tool returns the length subsequences of elements from the input iterable.<br>Combinations are emitted in lexicographic sorted order. So, if the input iterable is sorted, the combination tuples will be produced in sorted order.<br>Sample Code<br>Task<br><br><br>**Sample Input 0**<br><br>**Sample Output 0**<br><br>

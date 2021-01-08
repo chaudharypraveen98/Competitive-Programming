@@ -1,0 +1,2 @@
+## **[Inner and Outer](https://www.hackerrank.com/challenges/np-inner-and-outer)** 
+inner<br>The inner tool returns the inner product of two arrays.<br>outer<br>The outer tool returns the outer product of two arrays.<br><br><br><br>**Sample Input 0**<br><br>**Sample Output 0**<br><br>

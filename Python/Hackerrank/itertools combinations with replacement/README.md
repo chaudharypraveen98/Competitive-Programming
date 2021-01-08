@@ -1,0 +1,3 @@
+## **[itertools.combinations_with_replacement()](https://www.hackerrank.com/challenges/itertools-combinations-with-replacement)** 
+itertools.combinations_with_replacement(iterable, r)
+This tool returns length subsequences of elements from the input iterable allowing individual elements to be repeated more than once.<br>Combinations are emitted in lexicographic sorted order. So, if the input iterable is sorted, the combination tuples will be produced in sorted order.<br>Sample Code<br><br><br><br>**Sample Input 0**<br><br>**Sample Output 0**<br><br>
