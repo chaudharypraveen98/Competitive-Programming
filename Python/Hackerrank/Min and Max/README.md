@@ -1,0 +1,2 @@
+## **[Min and Max](https://www.hackerrank.com/challenges/np-min-and-max)** 
+min<br>The tool min returns the minimum value along a given axis.<br>By default, the axis value is <code>None</code>. Therefore, it finds the minimum over all the dimensions of the input array.    <br><br><br>By default, the axis value is <code>None</code>. Therefore, it finds the maximum over all the dimensions of the input array.    <br><br><br><br>**Sample Input 0**<br><br>**Sample Output 0**<br><br>**Explanation 0**<br><br>

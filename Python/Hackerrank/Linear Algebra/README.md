@@ -1,0 +1,2 @@
+## **[Linear Algebra](https://www.hackerrank.com/challenges/np-linear-algebra)** 
+The NumPy module also comes with a number of built-in routines for linear algebra calculations. These can be found in the sub-module linalg.<br>linalg.det<br>The linalg.det tool computes the determinant of an array.<br>linalg.eig<br>The linalg.eig computes the eigenvalues and right eigenvectors of a square array.<br><br><br><br><br><br><br>**Sample Input 0**<br><br>**Sample Output 0**<br><br>

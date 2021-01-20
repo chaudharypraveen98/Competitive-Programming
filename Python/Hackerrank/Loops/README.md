@@ -1,0 +1,3 @@
+## **[Loops](https://www.hackerrank.com/challenges/python-loops)** 
+Check Tutorial tab to know how to to solve.<br>Task
+The provided code stub reads and integer, , from STDIN. For all non-negative integers , print .<br>Example<br>The list of non-negative integers that are less than is . Print the square of each number on a separate line.<br><br>**Sample Input 0**<br><code></code><br><br>**Sample Output 0**<br><code></code><br><br>
