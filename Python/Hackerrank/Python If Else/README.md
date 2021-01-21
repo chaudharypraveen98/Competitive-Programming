@@ -1,0 +1,3 @@
+## **[Python If-Else](https://www.hackerrank.com/challenges/py-if-else)** 
+Check Tutorial tab to know how to to solve.<br>Task
+Given an integer, , perform the following conditional actions:<br><ul><li>If is odd, print Weird</li><li>If is even and in the inclusive range of to , print Not Weird</li><li>If is even and in the inclusive range of to , print Weird</li><li>If is even and greater than , print Not Weird</li></ul><br><br>**Sample Input 0**<br><code></code><br><br>**Sample Output 0**<br><code></code><br><br>**Explanation 0**<br><br><br>**Sample Input 1**<br><code></code><br><br>**Sample Output 1**<br><code></code><br><br>**Explanation 1**<br><br>

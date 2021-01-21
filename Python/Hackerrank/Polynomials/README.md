@@ -1,0 +1,2 @@
+## **[Polynomials](https://www.hackerrank.com/challenges/np-polynomials)** 
+poly<br>The poly tool returns the coefficients of a polynomial with the given sequence of roots.<br>roots<br>The roots tool returns the roots of a polynomial with the given coefficients.<br>polyint<br>The polyint tool returns an antiderivative (indefinite integral) of a polynomial.<br><br><br><br><br><br><br><br><br><br><br>**Sample Input 0**<br><br>**Sample Output 0**<br><br>
