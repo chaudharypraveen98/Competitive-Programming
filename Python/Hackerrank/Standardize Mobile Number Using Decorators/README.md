@@ -1,0 +1,3 @@
+## **[Standardize Mobile Number Using Decorators](https://www.hackerrank.com/challenges/standardize-mobile-number-using-decorators)** 
+Let's dive into decorators! You are given mobile numbers. Sort them in ascending order then print them in the standard format shown below:<br>The given mobile numbers may have , or written before the actual digit number. Alternatively, there may not be any prefix at all.<br>Input Format<br>The first line of input contains an integer , the number of mobile phone numbers.
+lines follow each containing a mobile number.<br>Output Format<br><br><br><br><br><br>

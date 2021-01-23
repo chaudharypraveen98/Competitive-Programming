@@ -1,0 +1,3 @@
+## **[Symmetric Difference](https://www.hackerrank.com/challenges/symmetric-difference)** 
+Objective
+Today, we're learning about a new data type: sets.<br>Concept<br>If the inputs are given on one line separated by a space character, use split() to get the separate values in the form of a list:<br>If the list values are all integer types, use the map() method to convert all the strings to integers.<br><br><br><br><br><br><br><br><br><br><br><br><br><br>**Sample Input 0**<br><br>**Sample Output 0**<br><br>

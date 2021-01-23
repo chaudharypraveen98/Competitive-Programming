@@ -1,0 +1,2 @@
+## **[Sum and Prod](https://www.hackerrank.com/challenges/np-sum-and-prod)** 
+sum<br>The sum tool returns the sum of array elements over a given axis.<br>By default, the axis value is <code>None</code>. Therefore, it performs a sum over all the dimensions of the input array.<br>prod<br><br>By default, the axis value is <code>None</code>. Therefore, it performs the product over all the dimensions of the input array.<br><br><br><br>**Sample Input 0**<br><br>**Sample Output 0**<br><br>**Explanation 0**<br><br>

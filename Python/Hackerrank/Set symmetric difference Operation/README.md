@@ -1,0 +1,4 @@
+## **[Set .symmetric_difference() Operation](https://www.hackerrank.com/challenges/py-set-symmetric-difference-operation)** 
+.symmetric_difference()<br>The <em>.symmetric_difference()</em> operator returns a set with all the elements that are in the set and the iterable but not both.<br>
+Sometimes, a <code>^</code> operator is used in place of the <em>.symmetric_difference()</em> tool, but it only operates on the set of elements in <em>set</em>.<br>
+The set is immutable to the <em>.symmetric_difference()</em> operation (or <code>^</code> operation).<br><br><br><br><br>**Sample Input 0**<br><br>**Sample Output 0**<br><br>**Explanation 0**<br><br>

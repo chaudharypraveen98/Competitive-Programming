@@ -1,0 +1,2 @@
+## **[sWAP cASE](https://www.hackerrank.com/challenges/swap-case)** 
+You are given a string and your task is to swap cases. In other words, convert all lowercase letters to uppercase letters and vice versa.<br>For Example:<br><br>**Sample Input 0**<br><code></code><br><br>**Sample Output 0**<br><code></code><br><br>

@@ -1,0 +1,2 @@
+## **[String Formatting](https://www.hackerrank.com/challenges/python-string-formatting)** 
+Given an integer, , print the following values for each integer from to :<br>The four values must be printed on a single line in the order specified above for each from to . Each value should be space-padded to match the width of the binary value of .<br><br>**Sample Input 0**<br><br>**Sample Output 0**<br><br>

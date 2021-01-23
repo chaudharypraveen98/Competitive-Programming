@@ -1,0 +1,2 @@
+## **[Shape and Reshape](https://www.hackerrank.com/challenges/np-shape-reshape)** 
+shape<br>The shape tool gives a tuple of array dimensions and can be used to change the dimensions of an array.<br>(a). Using shape to get array dimensions<br>(b). Using shape to change array dimensions<br><br><br><br><br><br>**Sample Input 0**<br><br>**Sample Output 0**<br><br>
