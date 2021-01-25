@@ -1,0 +1,3 @@
+## **[Text Alignment](https://www.hackerrank.com/challenges/text-alignment)** 
+In Python, a string of text can be aligned left, right and center.<br>.ljust(width)<br>This method returns a left aligned string of length width.<br>.center(width)<br>This method returns a centered string of length width.<br><br><br><br>You are given a partial code that is used for generating the <em>HackerRank Logo</em> of variable <em>thickness</em>. <br>
+Your task is to replace the blank (<code>______</code>) with <em>rjust, ljust</em> or <em>center</em>.<br><br>**Sample Input 0**<br><br>**Sample Output 0**<br><br>

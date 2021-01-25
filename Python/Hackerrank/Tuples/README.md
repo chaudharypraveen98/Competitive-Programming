@@ -1,0 +1,3 @@
+## **[Tuples](https://www.hackerrank.com/challenges/python-tuples)** 
+Task
+Given an integer, , and space-separated integers as input, create a tuple, , of those integers. Then compute and print the result of .<br><strong>Note:</strong> <a href="https://docs.python.org/3/library/functions.html#hash">hash()</a> is one of the functions in the <code>__builtins__</code> module, so it need not be imported.  <br><br>**Sample Input 0**<br><code></code><br><br>**Sample Output 0**<br><code></code><br><br>

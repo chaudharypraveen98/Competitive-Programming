@@ -1,0 +1,2 @@
+## **[Triangle Quest](https://www.hackerrank.com/challenges/python-quest-1)** 
+You are given a positive integer . Print a numerical triangle of height like the one below:<br>Can you do it using only arithmetic operations, a single for loop and print statement?<br>Use no more than two lines. The first line (the for statement) is already written for you. You have to complete the print statement.<br>Note: Using anything related to strings will give a score of .<br><br><br><br><br><br>
