@@ -1,0 +1,4 @@
+## **[Validating UID](https://www.hackerrank.com/challenges/validating-uid)** 
+ABCXYZ company has up to employees.
+The company decides to create a unique identification number (UID) for each of its employees.
+The company has assigned you the task of validating all the randomly generated UIDs.<br>A valid UID must follow the rules below:<br><ul><li>It must contain at least uppercase English alphabet characters.</li><li>It must contain at least digits ( - ).</li><li>It should only contain alphanumeric characters ( - , - & - ).</li><li>No character should repeat.</li><li>There must be exactly characters in a valid UID.</li></ul><br><br>**Sample Input 0**<br><br>**Sample Output 0**<br><br>**Explanation 0**<br><br>
