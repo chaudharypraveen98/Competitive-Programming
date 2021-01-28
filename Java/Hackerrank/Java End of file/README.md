@@ -1,0 +1,2 @@
+## **[Java End-of-file](https://www.hackerrank.com/challenges/java-end-of-file)** 
+"In computing, End Of File (commonly abbreviated EOF) is a condition in a computer operating system where no more data can be read from a data source." — (Wikipedia: End-of-file)<br>The challenge here is to read lines of input until you reach EOF, then number and print all lines of content.<br>Hint: Java's Scanner.hasNext() method is helpful for this problem.<br><br>**Sample Input 0**<br><br>**Sample Output 0**<br><br>
