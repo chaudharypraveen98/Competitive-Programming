@@ -1,0 +1,3 @@
+## **[Java If-Else](https://www.hackerrank.com/challenges/java-if-else)** 
+In this challenge, we test your knowledge of using if-else conditional statements to automate decision-making processes. An if-else statement has the following logical flow:<br><br>Source: Wikipedia<br>Task
+Given an integer, , perform the following conditional actions:<br><ul><li>If is odd, print Weird</li><li>If is even and in the inclusive range of to , print Not Weird</li><li>If is even and in the inclusive range of to , print Weird</li><li>If is even and greater than , print Not Weird</li></ul><br>Complete the stub code provided in your editor to print whether or not is weird.<br>
