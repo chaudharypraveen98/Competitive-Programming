@@ -1,0 +1,2 @@
+## **[Java Lambda Expressions](https://www.hackerrank.com/challenges/java-lambda-expressions)** 
+This Java 8 challenge tests your knowledge of Lambda expressions!<br>Write the following methods that return a lambda expression performing a specified action:<br><br>**Sample Input 0**<br><br><br><br>**Sample Output 0**<br><br>

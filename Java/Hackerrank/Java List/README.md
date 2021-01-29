@@ -1,0 +1,2 @@
+## **[Java List](https://www.hackerrank.com/challenges/java-list)** 
+For this problem, we have types of queries you can perform on a List:<br>Insert at index :<br>Delete the element at index :<br>Given a list, , of integers, perform queries on the list. Once all queries are completed, print the modified list as a single line of space-separated integers.<br><br>**Sample Input 0**<br><br>**Sample Output 0**<br><br>**Explanation 0**<br><br>

@@ -1,0 +1,2 @@
+## **[Java Loops II](https://www.hackerrank.com/challenges/java-loops)** 
+We use the integers , , and to create the following series:<br><br><br>You are given queries in the form of , , and . For each query, print the series corresponding to the given , , and values as a single line of space-separated integers.<br><br>**Sample Input 0**<br><br>**Sample Output 0**<br><br>**Explanation 0**<br><br>
