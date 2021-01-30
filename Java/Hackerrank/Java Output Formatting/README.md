@@ -1,0 +1,2 @@
+## **[Java Output Formatting](https://www.hackerrank.com/challenges/java-output-formatting)** 
+Java's System.out.printf function can be used to print formatted output. The purpose of this exercise is to test your understanding of formatting output using printf.<br>To get you started, a portion of the solution is provided for you in the editor; you must format and print the input to complete the solution.<br><br>**Sample Input 0**<br><br>**Sample Output 0**<br><br>**Explanation 0**<br><br>
