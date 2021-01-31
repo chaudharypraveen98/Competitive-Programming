@@ -1,0 +1,2 @@
+## **[Java Substring](https://www.hackerrank.com/challenges/java-substring)** 
+Given a string, , and two indices, and , print a substring consisting of all characters in the inclusive range from to . You'll find the String class' substring method helpful in completing this challenge.<br><br>**Sample Input 0**<br><br>**Sample Output 0**<br><br>**Explanation 0**<br><br>
