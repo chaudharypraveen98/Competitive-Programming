@@ -1,0 +1,2 @@
+## **[Pattern Syntax Checker](https://www.hackerrank.com/challenges/pattern-syntax-checker)** 
+Using Regex, we can easily match or search for patterns in a text. Before searching for a pattern, we have to specify one using some well-defined syntax.<br>In this problem, you are given a pattern. You have to check whether the syntax of the given pattern is valid.<br>Note: In this problem, a regex is only valid if you can compile it using the Pattern.compile method.<br><br>**Sample Input 0**<br><br>**Sample Output 0**<br><br>

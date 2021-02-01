@@ -1,0 +1,2 @@
+## **[Java 2D Array](https://www.hackerrank.com/challenges/java-2d-array)** 
+You are given a 2D array. An hourglass in an array is a portion shaped like this:<br>For example, if we create an hourglass using the number 1 within an array full of zeros, it may look like this:<br><br><br><br><br>**Sample Input 0**<br><br>**Sample Output 0**<br><br>**Explanation 0**<br><br>
