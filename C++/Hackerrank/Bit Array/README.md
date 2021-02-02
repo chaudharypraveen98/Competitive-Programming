@@ -1,0 +1,2 @@
+## **[Bit Array](https://www.hackerrank.com/challenges/bitset-1)** 
+You are given four integers: , , , . You will use them in order to create the sequence with the following pseudo-code.<br>Your task is to calculate the number of distinct integers in the sequence .<br><br>**Sample Input 0**<br><br>**Sample Output 0**<br><br>**Explanation 0**<br><br>

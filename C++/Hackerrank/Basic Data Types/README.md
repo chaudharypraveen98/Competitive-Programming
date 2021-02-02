@@ -1,0 +1,3 @@
+## **[Basic Data Types](https://www.hackerrank.com/challenges/c-tutorial-basic-data-types)** 
+Some C++ data types, their format specifiers, and their most common bit widths are as follows:<br><ul><li>Int ("%d"): 32 Bit integer</li><li>Long ("%ld"): 64 bit integer</li><li>Char ("%c"): Character type</li><li>Float ("%f"): 32 bit real value</li><li>Double ("%lf"): 64 bit real value</li></ul><br>Reading
+To read a data type, use the following syntax:<br>For example, to read a character followed by a double:<br><br><br><br><br><br>**Sample Input 0**<br><br>**Sample Output 0**<br><br>**Explanation 0**<br><br>
