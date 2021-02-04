@@ -1,0 +1,2 @@
+## **[Inheritance Introduction](https://www.hackerrank.com/challenges/inheritance-introduction)** 
+One of the important topics of Object Oriented Programming is Inheritance. Inheritance allows us to define a class in terms of another class, which allows us in the reusability of the code.Check out the code below:<br>The class Triangle has a function called triangle(). Now we create a class derived from the base class Triangle called Isosceles.<br><br><br><br>
