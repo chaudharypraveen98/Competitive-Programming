@@ -1,0 +1,5 @@
+## **[Vector-Erase](https://www.hackerrank.com/challenges/vector-erase)** 
+You are provided with a vector of integers. Then, you are given queries. For the first query, you are provided with integer, which denotes a position in the vector. The value at this position in the vector needs to be erased. The next query consists of integers denoting a range of the positions in the vector. The elements which fall under that range should be removed. The second query is performed on the updated vector which we get after performing the first query.
+The following are some useful vector functions:<br><ul><li>erase(int position):
+Removes the element present at position.  
+Ex: v.erase(v.begin()+4); (erases the fifth element of the vector v)</li><li>erase(int start,int end):</li></ul><br>erase(int position):<br>erase(int start,int end):<br><br>**Sample Input 0**<br><br>**Sample Output 0**<br><br>**Explanation 0**<br><br>

@@ -1,0 +1,4 @@
+## **[Say "Hello, World!" With C++](https://www.hackerrank.com/challenges/cpp-hello-world)** 
+Objective
+This is a simple challenge to help you practice printing to stdout. You may also want to complete Solve Me First in C++ before attempting this challenge.<br>We're starting out by printing the most famous computing phrase of all time! In the editor below, use either printf or cout to print the string to stdout.<br>The more popular command form is <code>cout</code>.  It has the following basic form:  <br><code>cout&lt;&lt;value_to_print&lt;&lt;value_to_print;</code>  <br>Any number of values can be printed using one command as shown.<br>The <code>printf</code> command comes from C language.  It accepts an optional format specification and a list of variables.  Two examples for printing a string are:  <br><code>printf("%s", string);</code>
+<code>printf(string);</code>  <br>Note that neither method adds a newline. It only prints what you tell it to.<br>
