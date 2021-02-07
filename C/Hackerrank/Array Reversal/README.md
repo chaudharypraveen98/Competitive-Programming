@@ -1,0 +1,2 @@
+## **[Array Reversal](https://www.hackerrank.com/challenges/reverse-array-c)** 
+Given an array, of size , reverse it.<br>Example: If array, , after reversing it, the array should be, .<br><br>**Sample Input 0**<br><code></code><br><br>**Sample Output 0**<br><code></code><br><br>**Explanation 0**<br><br>

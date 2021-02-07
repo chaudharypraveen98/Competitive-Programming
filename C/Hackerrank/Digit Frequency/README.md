@@ -1,0 +1,2 @@
+## **[Digit Frequency](https://www.hackerrank.com/challenges/frequency-of-digits-1)** 
+Given a string, , consisting of alphabets and digits, find the frequency of each digit in the given string.<br><br>**Sample Input 0**<br><code></code><br><br>**Sample Output 0**<br><code></code><br><br>**Explanation 0**<br><br>
