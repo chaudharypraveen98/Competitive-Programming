@@ -1,0 +1,2 @@
+## **[Printing Pattern Using Loops](https://www.hackerrank.com/challenges/printing-pattern-2)** 
+Print a pattern of numbers from to as shown below. Each of the numbers is separated by a single space.<br><br>**Sample Input 0**<br><code></code><br><br>**Sample Output 0**<br><code></code><br><br><br>**Sample Input 1**<br><code></code><br><br>**Sample Output 1**<br><code></code><br><br><br>**Sample Input 2**<br><code></code><br><br>**Sample Output 2**<br><code></code><br><br>
