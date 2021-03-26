@@ -6,7 +6,7 @@
 
 ## How to Contribute and Create a PR on this Repository?
 ### 1. Clone this repository.
-You first need to fork the original repo and you need to create a local copy of this repository to be able to contribute to the same. Copy the following command and paste it in your terminal.
+You first need to **fork** the original repo, **star** if you like that and you need to create a local copy of this repository to be able to contribute to the same. Copy the following command and paste it in your terminal.
 
 `git clone https://github.com/username/Competitive-Programming`
 
@@ -69,6 +69,13 @@ Congratulations on successfully creating a Pull Request there!
 
 7. At last please update the excel sheet
 
+## Guidelines for code base :
+* Add **comments** to your code in a **new line**
+* Follow **standard** structure of the particular language
+
+## Where to upload the files 📂
+
+* Your files should be uploaded inside the **code** folder into the corresponding language folder (For instance, if you wrote code for an Algorithm Implementation in Java, it goes inside the Java/Hackerrank folder).
 
 ## Contributors
 Please add your name in the list in the following format:
