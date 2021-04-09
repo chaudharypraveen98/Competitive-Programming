@@ -1,7 +1,7 @@
 ## **[Python If-Else](https://www.hackerrank.com/challenges/py-if-else)**
 
 Check Tutorial tab to know how to to solve.<br>Task
-Given an integer, , perform the following conditional actions:<br>
+Given an integer,`n`, perform the following conditional actions:<br>
 <ul>
 <li>If `n` is odd, print Weird</li>
 <li>If `n` is even and in the inclusive range of `2` to `5`, print Not Weird</li>
