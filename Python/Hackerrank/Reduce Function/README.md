@@ -4,5 +4,8 @@ The <code>reduce()</code> function applies a function of two arguments cumulativ
 6</code><br>You can also define an initial value. If it is specified, the function will assume initial value as the value given, and then reduce. It is equivalent to adding the initial value at the beginning of the list. For example:<br><code>>>> reduce(lambda x, y : x + y, [1,2,3], -3)
 3
 
-    
-   </code><br><br>**Sample Input 0**<br><code></code><br><br>**Sample Output 0**<br><code></code><br><br>**Explanation 0**<br><br>
+**Sample Input 0**  
+
+**Sample Output 0**  
+
+**Explanation 0**
