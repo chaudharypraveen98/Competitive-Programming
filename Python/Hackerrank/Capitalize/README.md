@@ -1,2 +1,11 @@
 ## **[Capitalize!](https://www.hackerrank.com/challenges/capitalize)** 
-You are asked to ensure that the first and last names of people begin with a capital letter in their passports. For example, <code>alison heck</code> should be capitalised correctly as <code>Alison Heck</code>. <br><br>Given a full name, your task is to capitalize the name appropriately.<br><br>**Sample Input 0**<br><br>**Sample Output 0**<br><br>
+
+You are asked to ensure that the first and last names of people begin with a capital letter in their passports. 
+For example, <code>alison heck</code> should be capitalised correctly as <code>Alison Heck</code>. <br><br>Given a full name, your task is to capitalize the name appropriately.
+
+
+**Sample Input 0**
+`chris alan`
+
+**Sample Output 0**  
+`Chris Alan`
