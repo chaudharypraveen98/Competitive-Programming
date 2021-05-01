@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>My form</title>
+    <style>
+      body{
+        text-align: center;
+        background-image: url('contact.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+      #myForm{
+        background-color: rgba(0, 0, 0, 0.6);
+        color: seashell;
+      }
+      #myForm>input{
+        background-color: rgba(255, 255, 255, 0.6);
+        padding: 10px;
+        margin: 15px;
+        color: seashell;
+        border-radius: 25px;
+        border-style: none;
+        outline: none;
+      }
+      #myForm label select{
+        padding: 10px;
+        margin: 5px;
+        color: white;
+      }
+      select{
+        margin: 20px 0px;
+      }
+      #file{
+        margin: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>My Form</h2>
+
+    <form action="/action_page.php" id="myForm">
+      <label for="fname">First name:</label><br />
+      <input type="text" id="fname" value="John" /><br />
+      <label for="email">email:</label><br />
+      <input type="email" id="email" placeholder="email" /><br />
+      <p>My hobbies<p>
+        <input type="checkbox" placeholder="Cricket" value="Cricket"  name='Cricket' />
+      <label for="Cricket">Cricket</label>
+      <br />
+      <input type="checkbox" placeholder="Basketball"  value="BasketBall" name="BasketBall"/>
+      <label for="Basketball">Basketball</label>
+      <br />
+      <p>Favourite Language<p>
+        <input type="radio" placeholder="Java" value="Java"  name='Java' />
+      <label for="Java">Java</label>
+      <br />
+      <input type="radio" placeholder="Python"  value="Python" name="Python"/>
+      <label for="Python">Python</label>
+      <br>
+      <input type="file" id='file'/>
+      <br>
+      <textarea placeholder="write your message" cols="60" rows="10"></textarea></br>
+        <label for='gender'> Choose Your Gender</label>
+      <select id="gender" name="gender">
+        <option value="Male">Male</option>
+        <option value="Female">Female</option>
+      </select>
+      <br>
+      <input type="submit" value="Submit" />
+    </form>
+  </body>
+</html>

@@ -1,2 +1,7 @@
 ## **[Class 2 - Find the Torsional Angle](https://www.hackerrank.com/challenges/class-2-find-the-torsional-angle)** 
-You are given four points and in a 3-dimensional Cartesian coordinate system. You are required to print the angle between the plane made by the points and in degrees(not radians). Let the angle be .<br>where x and x .<br>Here, means the dot product of and , and x means the cross product of vectors and . Also, .<br>Input Format<br>One line of input containing the space separated floating number values of the and coordinates of a point.<br>Output Format<br>Output the angle correct up to two decimal places.<br>Sample Input<br><br>
+
+
+You are given four points and in a 3-dimensional Cartesian coordinate system. You are required to print the angle between the plane made by the points and in degrees(not radians). Let the angle be .<br>where x and x .<br>Here, means the dot product of and , and x means the cross product of vectors and . Also, .<br>Input Format<br>One line of input containing the space separated floating number values of the and coordinates of a point.
+
+Output Format
+Output the angle correct up to two decimal places.<br>Sample Input<br><br>
