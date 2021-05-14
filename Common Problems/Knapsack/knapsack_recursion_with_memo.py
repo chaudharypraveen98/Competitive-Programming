@@ -1,9 +1,9 @@
+# Recursive solution with memo table
 def knapsack(index, W):
-
     # if the value is already calculated
     if array[index][W] != -1:
         return array[index][W]
-    
+
     # When index ie zero or total available space is over
     if index == 0 or W == 0:
         result = 0
@@ -11,7 +11,7 @@ def knapsack(index, W):
     # If the value at that index is greater than total available space
     elif weight[index] > W:
         result = knapsack(index - 1, W)
-    
+
     # we will calculate the max value by including or excluding this element.
     else:
         temp1 = knapsack(index - 1, W)
