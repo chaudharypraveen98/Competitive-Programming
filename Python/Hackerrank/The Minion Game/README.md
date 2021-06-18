@@ -9,4 +9,10 @@ String <span style="font-size: 100%; display: inline-block;" class="MathJax_SVG"
 Kevin's vowel beginning word = <em>ANA</em><br>
 Here, <em>ANA</em> occurs twice in <em>BANANA</em>. Hence, Kevin will get <code>2</code> Points.
 <br><br>
-For better understanding, see the image below: <br><br><br><br><br>**Sample Input 0**<br><br>**Sample Output 0**<br><br><br>
+For better understanding, see the image below: 
+
+
+**Sample Input 0**  
+
+**Sample Output 0**  
+Sample test
