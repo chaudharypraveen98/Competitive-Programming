@@ -1,7 +1,88 @@
 ## **[Set .discard(), .remove() & .pop()](https://www.hackerrank.com/challenges/py-set-discard-remove-pop)** 
-.remove(x)<br>This operation removes element <span style="font-size: 100%; display: inline-block;" class="MathJax_SVG" id="MathJax-Element-1-Frame"><svg xmlns:xlink="http://www.w3.org/1999/xlink" width="1.33ex" height="1.676ex" style="vertical-align: -0.338ex;" viewBox="0 -576.1 572.5 721.6" role="img" focusable="false"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="matrix(1 0 0 -1 0 0)"><path stroke-width="1" d="M52 289Q59 331 106 386T222 442Q257 442 286 424T329 379Q371 442 430 442Q467 442 494 420T522 361Q522 332 508 314T481 292T458 288Q439 288 427 299T415 328Q415 374 465 391Q454 404 425 404Q412 404 406 402Q368 386 350 336Q290 115 290 78Q290 50 306 38T341 26Q378 26 414 59T463 140Q466 150 469 151T485 153H489Q504 153 504 145Q504 144 502 134Q486 77 440 33T333 -11Q263 -11 227 52Q186 -10 133 -10H127Q78 -10 57 16T35 71Q35 103 54 123T99 143Q142 143 142 101Q142 81 130 66T107 46T94 41L91 40Q91 39 97 36T113 29T132 26Q168 26 194 71Q203 87 217 139T245 247T261 313Q266 340 266 352Q266 380 251 392T217 404Q177 404 142 372T93 290Q91 281 88 280T72 278H58Q52 284 52 289Z"></path></g></svg></span> from the set. <br>
-If element <span style="font-size: 100%; display: inline-block;" class="MathJax_SVG" id="MathJax-Element-2-Frame"><svg xmlns:xlink="http://www.w3.org/1999/xlink" width="1.33ex" height="1.676ex" style="vertical-align: -0.338ex;" viewBox="0 -576.1 572.5 721.6" role="img" focusable="false"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="matrix(1 0 0 -1 0 0)"><path stroke-width="1" d="M52 289Q59 331 106 386T222 442Q257 442 286 424T329 379Q371 442 430 442Q467 442 494 420T522 361Q522 332 508 314T481 292T458 288Q439 288 427 299T415 328Q415 374 465 391Q454 404 425 404Q412 404 406 402Q368 386 350 336Q290 115 290 78Q290 50 306 38T341 26Q378 26 414 59T463 140Q466 150 469 151T485 153H489Q504 153 504 145Q504 144 502 134Q486 77 440 33T333 -11Q263 -11 227 52Q186 -10 133 -10H127Q78 -10 57 16T35 71Q35 103 54 123T99 143Q142 143 142 101Q142 81 130 66T107 46T94 41L91 40Q91 39 97 36T113 29T132 26Q168 26 194 71Q203 87 217 139T245 247T261 313Q266 340 266 352Q266 380 251 392T217 404Q177 404 142 372T93 290Q91 281 88 280T72 278H58Q52 284 52 289Z"></path></g></svg></span> does not exist, it raises a <strong><code>KeyError</code></strong>.<br>
-The <em>.remove(x)</em> operation returns <strong><code>None</code></strong>.<br>Example<br><br>This operation also removes element <span style="font-size: 100%; display: inline-block;" class="MathJax_SVG" id="MathJax-Element-3-Frame"><svg xmlns:xlink="http://www.w3.org/1999/xlink" width="1.33ex" height="1.676ex" style="vertical-align: -0.338ex;" viewBox="0 -576.1 572.5 721.6" role="img" focusable="false"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="matrix(1 0 0 -1 0 0)"><path stroke-width="1" d="M52 289Q59 331 106 386T222 442Q257 442 286 424T329 379Q371 442 430 442Q467 442 494 420T522 361Q522 332 508 314T481 292T458 288Q439 288 427 299T415 328Q415 374 465 391Q454 404 425 404Q412 404 406 402Q368 386 350 336Q290 115 290 78Q290 50 306 38T341 26Q378 26 414 59T463 140Q466 150 469 151T485 153H489Q504 153 504 145Q504 144 502 134Q486 77 440 33T333 -11Q263 -11 227 52Q186 -10 133 -10H127Q78 -10 57 16T35 71Q35 103 54 123T99 143Q142 143 142 101Q142 81 130 66T107 46T94 41L91 40Q91 39 97 36T113 29T132 26Q168 26 194 71Q203 87 217 139T245 247T261 313Q266 340 266 352Q266 380 251 392T217 404Q177 404 142 372T93 290Q91 281 88 280T72 278H58Q52 284 52 289Z"></path></g></svg></span> from the set. <br>
-If element <span style="font-size: 100%; display: inline-block;" class="MathJax_SVG" id="MathJax-Element-4-Frame"><svg xmlns:xlink="http://www.w3.org/1999/xlink" width="1.33ex" height="1.676ex" style="vertical-align: -0.338ex;" viewBox="0 -576.1 572.5 721.6" role="img" focusable="false"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="matrix(1 0 0 -1 0 0)"><path stroke-width="1" d="M52 289Q59 331 106 386T222 442Q257 442 286 424T329 379Q371 442 430 442Q467 442 494 420T522 361Q522 332 508 314T481 292T458 288Q439 288 427 299T415 328Q415 374 465 391Q454 404 425 404Q412 404 406 402Q368 386 350 336Q290 115 290 78Q290 50 306 38T341 26Q378 26 414 59T463 140Q466 150 469 151T485 153H489Q504 153 504 145Q504 144 502 134Q486 77 440 33T333 -11Q263 -11 227 52Q186 -10 133 -10H127Q78 -10 57 16T35 71Q35 103 54 123T99 143Q142 143 142 101Q142 81 130 66T107 46T94 41L91 40Q91 39 97 36T113 29T132 26Q168 26 194 71Q203 87 217 139T245 247T261 313Q266 340 266 352Q266 380 251 392T217 404Q177 404 142 372T93 290Q91 281 88 280T72 278H58Q52 284 52 289Z"></path></g></svg></span> does not exist, it <strong>does not</strong> raise a <code>KeyError</code>.<br>
-The <em>.discard(x)</em> operation returns <strong><code>None</code></strong>.<br><br><br>This operation removes and return an arbitrary element from the set. <br>
-If there are no elements to remove, it raises a <strong><code>KeyError</code></strong>.<br><br><br><br><br><br>**Sample Input 0**<br><br>**Sample Output 0**<br><br>**Explanation 0**<br><br>
+#### .remove(x)
+
+This operation removes element **x** from the set.
+If element **x** does not exist, it raises a <strong><code>KeyError</code></strong>.
+The <em>.remove(x)</em> operation returns <strong><code>None</code></strong>.<br>Example  
+```
+>>> s = set([1, 2, 3, 4, 5, 6, 7, 8, 9])
+>>> s.remove(5)
+>>> print s
+set([1, 2, 3, 4, 6, 7, 8, 9])
+>>> print s.remove(4)
+None
+>>> print s
+set([1, 2, 3, 6, 7, 8, 9])
+>>> s.remove(0)
+KeyError: 0
+```
+##### .discard(x)
+This operation also removes element **x** from the set.
+If element **x** does not exist, it <strong>does not</strong> raise a <code>KeyError</code>.
+The <em>.discard(x)</em> operation returns <strong><code>None</code></strong>.
+```
+>>> s = set([1, 2, 3, 4, 5, 6, 7, 8, 9])
+>>> s.discard(5)
+>>> print s
+set([1, 2, 3, 4, 6, 7, 8, 9])
+>>> print s.discard(4)
+None
+>>> print s
+set([1, 2, 3, 6, 7, 8, 9])
+>>> s.discard(0)
+>>> print s
+set([1, 2, 3, 6, 7, 8, 9])
+```
+#### .pop()
+This operation removes and return an arbitrary element from the set.
+If there are no elements to remove, it raises a <strong><code>KeyError</code></strong>.
+Example
+```
+>>> s = set([1])
+>>> print s.pop()
+1
+>>> print s
+set([])
+>>> print s.pop()
+KeyError: pop from an empty set
+```
+#### Task
+You have a non-empty set **s**, and you have to execute **N** commands given in **N** lines.
+
+The commands will be pop, remove and discard.
+
+#### Input Format
+
+The first line contains integer **n**, the number of elements in the set **s**.
+The second line contains **N** space separated elements of set **s**. All of the elements are non-negative integers, less than or equal to 9.
+The third line contains integer **N**, the number of commands.
+The next **N** lines contains either pop, remove and/or discard commands followed by their associated value.
+
+#### Output Format
+
+Print the sum of the elements of set **s** on a single line.
+
+**Sample Input 0**  
+```
+9
+1 2 3 4 5 6 7 8 9
+10
+pop
+remove 9
+discard 9
+discard 8
+remove 7
+pop 
+discard 6
+remove 5
+pop 
+discard 5
+```
+
+**Sample Output0**  
+`4`
+
+**Explanation 0**  
+After completing these 10 operations on the set([4]) ,we get set. Hence, the sum is 4.
+
+Note: Convert the elements of set s to integers while you are assigning them. To ensure the proper input of the set, we have added the first two lines of code to the editor.
