@@ -6,3 +6,4 @@ Your task is to print a reversed <em>NumPy</em> array with the element type <cod
 **Sample Input 0**  
 
 **Sample Output 0**
+Lol
