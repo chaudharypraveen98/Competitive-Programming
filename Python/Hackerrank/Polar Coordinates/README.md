@@ -6,11 +6,6 @@ If we convert complex number to its polar coordinate, we find:
 : Counter clockwise angle measured from the positive -axis to the line segment that joins to the origin.
 
 
-**Sample Input 0** 
-
-
-**Sample Output 0**
-
 
 Note: The output should be correct up to 3 decimal places.
 Please not the decimal
