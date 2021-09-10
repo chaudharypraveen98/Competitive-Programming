@@ -1,9 +1,46 @@
 ## **[Arrays](https://www.hackerrank.com/challenges/np-arrays)** 
 
-The NumPy (Numeric Python) package helps us manipulate large arrays and matrices of numeric data.<br>To use the NumPy module, we need to import it using:<br>Arrays<br>A NumPy array is a grid of values. They are similar to lists, except that every element of an array must be the same type.<br>In the above example, <code>numpy.array()</code> is used to convert a list into a <em>NumPy</em> array. The second argument (float) can be used to set the type of array elements.<br><br>You are given a space separated list of numbers. <br>
-Your task is to print a reversed <em>NumPy</em> array with the element type <code>float</code>.<br><br>
+The NumPy (Numeric Python) package helps us manipulate large arrays and matrices of numeric data.
 
-**Sample Input 0**  
+To use the NumPy module, we need to import it using:
 
-**Sample Output 0**
-Lol
+```
+import numpy
+```
+
+##### Arrays
+
+A NumPy array is a grid of values. They are similar to lists, except that every element of an array must be the same type.
+```
+import numpy
+
+a = numpy.array([1,2,3,4,5])
+print a[1]          #2
+
+b = numpy.array([1,2,3,4,5],float)
+print b[1]          #2.0
+```
+In the above example, numpy.array() is used to convert a list into a NumPy array. The second argument (float) can be used to set the type of array elements.
+
+#### Task
+
+You are given a space separated list of numbers.
+Your task is to print a reversed NumPy array with the element type float.
+
+#### Input Format
+
+A single line of input containing space separated numbers.
+
+#### Output Format
+
+Print the reverse NumPy array with type float.
+
+#### Sample Input
+
+```
+1 2 3 4 -8 -10
+```
+
+#### Sample Output
+
+[-10.  -8.   4.   3.   2.   1.]
