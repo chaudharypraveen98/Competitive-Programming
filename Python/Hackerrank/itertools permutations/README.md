@@ -1,2 +1,64 @@
 ## **[itertools.permutations()](https://www.hackerrank.com/challenges/itertools-permutations)** 
-itertools.permutations(iterable[, r])<br>This tool returns successive length permutations of elements in an iterable.<br>If <span style="font-size: 100%; display: inline-block;" class="MathJax_SVG" id="MathJax-Element-2-Frame"><svg xmlns:xlink="http://www.w3.org/1999/xlink" width="1.049ex" height="1.676ex" style="vertical-align: -0.338ex;" viewBox="0 -576.1 451.5 721.6" role="img" focusable="false"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="matrix(1 0 0 -1 0 0)"><path stroke-width="1" d="M21 287Q22 290 23 295T28 317T38 348T53 381T73 411T99 433T132 442Q161 442 183 430T214 408T225 388Q227 382 228 382T236 389Q284 441 347 441H350Q398 441 422 400Q430 381 430 363Q430 333 417 315T391 292T366 288Q346 288 334 299T322 328Q322 376 378 392Q356 405 342 405Q286 405 239 331Q229 315 224 298T190 165Q156 25 151 16Q138 -11 108 -11Q95 -11 87 -5T76 7T74 17Q74 30 114 189T154 366Q154 405 128 405Q107 405 92 377T68 316T57 280Q55 278 41 278H27Q21 284 21 287Z"></path></g></svg></span> is not specified or is <code>None</code>, then <span style="font-size: 100%; display: inline-block;" class="MathJax_SVG" id="MathJax-Element-3-Frame"><svg xmlns:xlink="http://www.w3.org/1999/xlink" width="1.049ex" height="1.676ex" style="vertical-align: -0.338ex;" viewBox="0 -576.1 451.5 721.6" role="img" focusable="false"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="matrix(1 0 0 -1 0 0)"><path stroke-width="1" d="M21 287Q22 290 23 295T28 317T38 348T53 381T73 411T99 433T132 442Q161 442 183 430T214 408T225 388Q227 382 228 382T236 389Q284 441 347 441H350Q398 441 422 400Q430 381 430 363Q430 333 417 315T391 292T366 288Q346 288 334 299T322 328Q322 376 378 392Q356 405 342 405Q286 405 239 331Q229 315 224 298T190 165Q156 25 151 16Q138 -11 108 -11Q95 -11 87 -5T76 7T74 17Q74 30 114 189T154 366Q154 405 128 405Q107 405 92 377T68 316T57 280Q55 278 41 278H27Q21 284 21 287Z"></path></g></svg></span> defaults to the length of the iterable, and all possible full length permutations are generated.  <br>Permutations are printed in a lexicographic sorted order. So, if the input iterable is sorted, the permutation tuples will be produced in a sorted order.<br>Sample Code<br><br><br><br>**Sample Input 0**<br><br>**Sample Output 0**<br><br>**Explanation 0**<br><br>
+itertools.permutations(iterable[, r])
+
+This tool returns successive **r** length permutations of elements in an iterable.
+
+If **r** is not specified or is None, then **r** defaults to the length of the iterable, and all possible full length permutations are generated.
+
+Permutations are printed in a lexicographic sorted order. So, if the input iterable is sorted, the permutation tuples will be produced in a sorted order.
+
+#### Sample Code
+```
+>>> from itertools import permutations
+>>> print permutations(['1','2','3'])
+<itertools.permutations object at 0x02A45210>
+>>> 
+>>> print list(permutations(['1','2','3']))
+[('1', '2', '3'), ('1', '3', '2'), ('2', '1', '3'), ('2', '3', '1'), ('3', '1', '2'), ('3', '2', '1')]
+>>> 
+>>> print list(permutations(['1','2','3'],2))
+[('1', '2'), ('1', '3'), ('2', '1'), ('2', '3'), ('3', '1'), ('3', '2')]
+>>>
+>>> print list(permutations('abc',3))
+[('a', 'b', 'c'), ('a', 'c', 'b'), ('b', 'a', 'c'), ('b', 'c', 'a'), ('c', 'a', 'b'), ('c', 'b', 'a')]
+```
+
+#### Task
+
+You are given a string **S**.
+Your task is to print all possible permutations of size **K** of the string in lexicographic sorted order.
+
+Input Format
+
+A single line containing the space separated string **S** and the integer value **K**.
+
+#### Constraints
+
+The string contains only UPPERCASE characters.
+
+#### Output Format
+
+Print the permutations of the string **S** on separate lines.
+
+#### Sample Input
+```
+HACK 2
+```
+#### Sample Output
+```
+AC
+AH
+AK
+CA
+CH
+CK
+HA
+HC
+HK
+KA
+KC
+KH
+```
+#### Explanation
+
+All possible size 2 permutations of the string "HACK" are printed in lexicographic sorted order.
