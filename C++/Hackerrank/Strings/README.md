@@ -5,3 +5,5 @@ int len = a.size();</li><li>Concatenate two strings:
 string a = "abc";
 string b = "def";
 string c = a + b; // c = "abcdef".</li><li></li></ul><br>Declaration:<br>Size:<br>Concatenate two strings:<br><br><br><br>**Sample Input 0**<br><br>**Sample Output 0**<br><br>
+
+Test
