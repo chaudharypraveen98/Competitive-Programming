@@ -4,3 +4,4 @@ set<int>s; //Creates a set of integers.</li><li>Size:
 int length=s.size(); //Gives the size of the set.</li><li>Insert:
 s.insert(x); //Inserts an integer x into the set s.</li><li></li><li></li></ul><br>Declaration:<br>Size:<br>Insert:<br><br><br><br><br>**Sample Input 0**<br><br>**Sample Output 0**<br><br>
 Test
+test 2
