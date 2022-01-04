@@ -1,2 +1,3 @@
 ## **[For Loop in C](https://www.hackerrank.com/challenges/for-loop-in-c)** 
 Objective<br>In this challenge, you will learn the usage of the for loop, which is a programming language statement which allows code to be executed until a terminal condition is met. They can even repeat forever if the terminal condition is never met.<br>The syntax for the <code>for</code> loop is:<br><ul><li>expression_1 is used for intializing variables which are generally used for controlling the terminating flag for the loop.</li><li>expression_2 is used to check for the terminating condition. If this evaluates to false, then the loop is terminated.</li><li></li></ul><br><br><br><br><ul><li></li><li></li><li></li></ul><br><br>**Sample Input 0**<br><br>**Sample Output 0**<br><br>
+Test
