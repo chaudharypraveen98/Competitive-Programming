@@ -1,17 +1,19 @@
 ## Knuth Morris Prath
 It is a string matching algorithm which is capable of finding sub string in a string with a linear time complexity. It uses the optimization which a pattern contains sub string more than once.
 
+<img src="./KMP.png" width="300">
+
 ### Why KMP over Naive method?
-Because it never backtracks the already match string by using prefix function(pi) which contains info about longest proper prefix which is also a suffix(lps).
+Because it never backtracks, the already matched string by using prefix function(pi) which contains info about the longest proper prefix which is also a suffix(lps).
 
 ### What is a Prefix function
-This function contains information about who the pattern matches against the shift of itself. This info is used to avoid the unnessary backtracking of the string.
+This function contains information about the pattern matches against the shift of itself. This info is used to avoid the unnecessary backtracking of the string.
 
 ### KMP Matcher or Main Search Function
 It takes the text, pattern and the lps of pattern. It will search for the pattern in text by utilizing the already calculated lps array. IT helps to not backtrack.
 
-Psuedu Steps:  
-1. Store length of text and pattern in N and M variable respectively.
+Pseudo Steps:  
+1. Store length of text and pattern in N and M variable, respectively.
 2. Before moving ahead, let's calculate the lps array.  
    1. Two pointers needed on same pattern i, len. Start i from 1 and len from 0.
    2. Loop while i <= M.  
