@@ -46,4 +46,4 @@ def kmp(text,pattern):
 
 
 if __name__ == "__main__":
-  print(kmp("AAAABAAAAABBBAAAAB","AAAB"))
+  print(kmp("AAAABAAAAABBBAAAAB","ABABD"))

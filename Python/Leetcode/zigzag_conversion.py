@@ -13,6 +13,8 @@ def convert(s,numRows):
           if i != 0 and i != numRows - 1 and (j + step - 2 * i) < len(s):
               result += s[j + step - 2 * i]
   return result
+
+
 if __name__ == "__main__":
   a="uqinntq"
   print(convert(a,1))
