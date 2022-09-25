@@ -1,5 +1,8 @@
 # finding three sum 
 # Time complexity O(N^2)
+from operator import le
+
+
 def sub_three_sum(nums, target,starting_point):
     result = []
     for left in range(starting_point+1,len(nums)-2):
@@ -38,5 +41,5 @@ def four_sum(nums, target):
     return result
 
 if __name__ == "__main__":
-  nums = [2,2,2,2,2]
+  nums = [2,2,2,2]
   print(four_sum(nums,8))
