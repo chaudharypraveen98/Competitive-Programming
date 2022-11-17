@@ -1,0 +1,1 @@
+Use two pointer and find consecutive string and add the strings
