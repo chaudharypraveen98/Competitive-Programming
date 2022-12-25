@@ -1,0 +1,1 @@
+get the total candy by suming extra candies and comparing to max
