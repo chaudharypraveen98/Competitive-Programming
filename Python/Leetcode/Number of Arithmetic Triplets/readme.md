@@ -1,0 +1,1 @@
+check for i-diff and i-2*diff
