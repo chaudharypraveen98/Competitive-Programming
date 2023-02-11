@@ -1,0 +1,1 @@
+store the highest point and sum all
