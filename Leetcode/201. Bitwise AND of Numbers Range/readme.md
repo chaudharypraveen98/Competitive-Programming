@@ -1,0 +1,3 @@
+Approaches:
+1. Calculate coulmn wise untill you hit a zero then complete column will be zero and we have no need to calculate rest. it has a constant space **O(1)** but have time complexity of **O(Q(LEFT-RIGHT))**
+2. We have a common oberservation that right of flipped bit is also flipped. Leftmost consecitive common bits in LEFT and RIGHT  are always fixed in given range. [Youtube Link](https://www.youtube.com/watch?v=-qrpJykY2gE&ab_channel=Techdose)
