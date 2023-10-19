@@ -1,4 +1,5 @@
 ## Approach
+The main concept lies that ones*zeros  are the distance of each column
   
     a = 0 0 0 1 0
     b = 1 0 0 1 1
