@@ -9,7 +9,7 @@ impl Solution {
             if i > 0 && nums[i] == nums[i - 1] {
                 continue;
             }
-            let mut left = i;
+            let mut left = i+1;
             let mut right = nums.len() - 1;
             while left < right {
                 let sum_three = nums[i] + nums[left] + nums[right];
@@ -34,6 +34,6 @@ impl Solution {
     }
 }
 fn main() {
-    let res = Solution::three_sum(vec![-1, 0, 1, 2, -1, -4]);
+    let res = Solution::three_sum(vec![1,2,-2,-1]);
     println!("{:?}", res);
 }
