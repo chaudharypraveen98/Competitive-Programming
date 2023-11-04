@@ -11,25 +11,24 @@ what happens is that we have to say the previous number in simpliest way .
 """
 
 
-
 class Solution:
     def countAndSay(self, n: int) -> str:
-      if n<=2:
-        return "1"*n
-      res = "11"      
-      for _ in range(3,n+1):
-        j=start=0
-        temp_res=""
-        for j in range(1,len(res)):
-          if res[j]!=res[j-1]:
-            temp_res+=str(j-start)+res[j-1]
-            start = j
-          j+=1
-        res=temp_res+str(j-start)+res[j-1]
-      return res
-        
+        if n <= 2:
+            return "1"*n
+        res = "11"
+        for _ in range(3, n+1):
+            j = start = 0
+            temp_res = ""
+            for j in range(1, len(res)):
+                if res[j] != res[j-1]:
+                    temp_res += str(j-start)+res[j-1]
+                    start = j
+                j += 1
+            res = temp_res+str(j-start)+res[j-1]
+        return res
 
-item  = Solution()
+
+item = Solution()
 print(item.countAndSay(4))
 
 # 9
@@ -42,4 +41,3 @@ print(item.countAndSay(4))
 # "312211"
 # Expected
 # "312211"
-
