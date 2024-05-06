@@ -1,0 +1,1 @@
+Refer to [Common Problem List](/Common%20Problems/Recurision/Josephus%20problem/readme.md)
