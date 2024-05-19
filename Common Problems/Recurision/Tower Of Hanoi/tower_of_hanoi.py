@@ -1,17 +1,17 @@
 import math
 
-
 class Solution:
     cnt = 0
 
     def toh(self, N, fromm, to, aux):
         if N == 1:
             print("move disk", N, "from rod", fromm, "to rod", to)
-            return self.cnt+1
-        self.cnt = self.toh(N-1, fromm, aux, to)
+            self.cnt += 1
+            return self.cnt
+        self.toh(N-1, fromm, aux, to)
         self.cnt += 1
         print("move disk", N, "from rod", fromm, "to rod", to)
-        self.cnt = self.toh(N-1, aux, to, fromm)
+        self.toh(N-1, aux, to, fromm)
         return self.cnt
 
 
