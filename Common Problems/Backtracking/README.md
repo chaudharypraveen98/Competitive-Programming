@@ -3,3 +3,6 @@ Backtracking is an algorithmic-technique for solving problems recursively by try
 
 <img src="backtracking.png" alt="backtracking">
 
+#### Common Applications:-
+- [Combination Problems](./../Combination/Combination/readme.md)
+- [Traversal Problem - Root Leaf & Level order](../Trees/Traversal/readme.md)
