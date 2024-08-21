@@ -5,22 +5,22 @@ from typing import List
 
 
 class Solution:
-    def combination(self, start, path, res):
+    def dfs(self, start, path, res):
         path.append(start.data)
         if start.left and start.right:
-            self.combination(start.left, path, res)
-            self.combination(start.right, path, res)
+            self.dfs(start.left, path, res)
+            self.dfs(start.right, path, res)
         elif start.left:
-            self.combination(start.left, path, res)
+            self.dfs(start.left, path, res)
         elif start.right:
-            self.combination(start.right, path, res)
+            self.dfs(start.right, path, res)
         else:
             res.append(path[:])
         path.pop()
 
     def Paths(self, root: Optional['Node']) -> List[List[int]]:
         res = []
-        self.combination(root, [], res)
+        self.dfs(root, [], res)
         return res
 
 

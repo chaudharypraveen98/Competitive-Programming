@@ -30,30 +30,31 @@ def findSpiral(root):
 # Recursive method
 
 
+def bfs(que, left_dir, res):
+    if not que:
+        return
+    curr_values = []
+    for node in que:
+        curr_values.append(node.data)
+    if left_dir:
+        res.extend(curr_values)
+    else:
+        res.extend(curr_values[::-1])
+
+    next_nodes = []
+    for node in que:
+        if node.left:
+            next_nodes.append(node.left)
+        if node.right:
+            next_nodes.append(node.right)
+    bfs(next_nodes, not left_dir, res)
+
+
 def findSpiral1(root):
     if not root:
         return []
     q, is_left, res = [root], False, []
-
-    def _helper(que, left_dir):
-        if not que:
-            return
-        curr_values = []
-        for node in que:
-            curr_values.append(node.data)
-        if left_dir:
-            res.extend(curr_values)
-        else:
-            res.extend(curr_values[::-1])
-
-        next_nodes = []
-        for node in que:
-            if node.left:
-                next_nodes.append(node.left)
-            if node.right:
-                next_nodes.append(node.right)
-        _helper(next_nodes, not left_dir)
-    _helper(q, is_left)
+    bfs(q, is_left, res)
     return res
 
 
@@ -130,7 +131,14 @@ def buildTree(s):
 if __name__ == "__main__":
     s = "10 20 30 40 60"
     root = buildTree(s)
+    print("---USING ITERATIVE METHOD---")
     result = findSpiral(root)
+    for value in result:
+        print(value, end=" ")
+    print()
+
+    print("---USING RECURSIVE METHOD---")
+    result = findSpiral1(root)
     for value in result:
         print(value, end=" ")
     print()
