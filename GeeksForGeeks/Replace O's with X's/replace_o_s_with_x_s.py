@@ -1,6 +1,6 @@
 class Solution:
     def __init__(self) -> None:
-        self.dfs_arr = set()
+        self.dfs_arr = []
 
     def dfs(self, mat, i, j):
         if mat[i][j] == 'X':
