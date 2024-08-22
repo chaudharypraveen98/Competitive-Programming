@@ -91,3 +91,8 @@ Please add your name in the list in the following format:
 - profumato4 - [Java - Pattern Syntax Checker](Java/Hackerrank/Pattern%20Syntax%20Checker)
 - profumato4 - [Java - Valid Username Regular Expression](Java/Hackerrank/Valid%20Username%20Regular%20Expression)
 - profumato4 - [Java - Welcome to Java](Java/Hackerrank/Welcome%20to%20Java)
+- profumato4 - [Java - Can You Access](Java/Hackerrank/Can%20You%20Access)
+- profumato4 - [Java - Covariant Return Types](Java/Hackerrank/Covariant%20Return%20Types)
+- profumato4 - [Java - Java Abstract Class](Java/Hackerrank/Java%20Abstract%20Class)
+- profumato4 - [Java - Java Annotations](Java/Hackerrank/Java%20Annotations)
+- profumato4 - [Java - Java Arraylist](Java/Hackerrank/Java%20Arraylist)
