@@ -8,6 +8,6 @@ Some points to remember
 * for all combinations, use custom method with backtracking
 
 ### Good Questions :-
-1. [Shuffle integers](./GeeksForGeeks/Shuffle%20integers/readme.md)
-2. [Optimal Strategy For A Game](./GeeksForGeeks/Optimal%20Strategy%20For%20A%20Game/readme.md)
+1. [Shuffle integers](./GeeksForGeeks/Shuffle%20integers/)
+2. [Optimal Strategy For A Game](./GeeksForGeeks/Optimal%20Strategy%20For%20A%20Game/)
 3. [Replace O's with X's](./GeeksForGeeks/Replace%20O's%20with%20X's/)
