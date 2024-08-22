@@ -82,3 +82,12 @@ Please add your name in the list in the following format:
 
 ` - Name - [File Name](File Address)`
 - Praveen Chaudhary - [Athlete Sort](Python/Hackerrank/Athlete Sort)
+- profumato4 - [Java - Java Substring](Java/Hackerrank/Java%20Substring)
+- profumato4 - [Java - Java Substring Comparison](Java/Hackerrank/Java%20Substring%20Comparisons)
+- profumato4 - [Java - Java String Introduction](Java/Hackerrank/Java%20Strings%20Introduction)
+- profumato4 - [Java - Java String Reverse](Java/Hackerrank/Java%20String%20Reverse)
+- profumato4 - [Java - Java Anagrams](Java/Hackerrank/Java%20Anagrams)
+- profumato4 - [Java - Java String Tokens](Java/Hackerrank/Java%20String%20Tokens)
+- profumato4 - [Java - Pattern Syntax Checker](Java/Hackerrank/Pattern%20Syntax%20Checker)
+- profumato4 - [Java - Valid Username Regular Expression](Java/Hackerrank/Valid%20Username%20Regular%20Expression)
+- profumato4 - [Java - Welcome to Java](Java/Hackerrank/Welcome%20to%20Java)
