@@ -106,3 +106,8 @@ Please add your name in the list in the following format:
 - profumato4 - [Java - Java Dequeue](Java/Hackerrank/Java%20Dequeue)
 - profumato4 - [Java - Java End of file](Java/Hackerrank/Java%20End%20of%20file)
 - profumato4 - [Java - Tag Content Extractor](Java/Hackerrank/Tag%20Content%20Extractor)
+- profumato4 - [Java - Java Primality Test](Java/Hackerrank/Java%20Primality%20Test)
+- profumato4 - [Java - Java 1D Array](Java/Hackerrank/Java%201D%20Array)
+- profumato4 - [Java - Java 2D Array](Java/Hackerrank/Java%202D%20Array)
+- profumato4 - [Java - Java Subarray](Java/Hackerrank/Java%20Subarray)
+- profumato4 - [Java - Java 1D Array Part 2](Java/Hackerrank/Java%201D%20Array%20Part%202)
