@@ -15,6 +15,7 @@ public class Solution {
             pair_left[i]  = s.next();
             pair_right[i] = s.next();
         }
+
         s.close();
 
         HashSet<String> set = new HashSet(t);
