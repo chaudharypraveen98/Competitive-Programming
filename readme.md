@@ -105,3 +105,4 @@ Please add your name in the list in the following format:
 - profumato4 - [Java - Java Data and Time](Java/Hackerrank/Java%20Date%20and%20Time)
 - profumato4 - [Java - Java Dequeue](Java/Hackerrank/Java%20Dequeue)
 - profumato4 - [Java - Java End of file](Java/Hackerrank/Java%20End%20of%20file)
+- profumato4 - [Java - Tag Content Extractor](Java/Hackerrank/Tag%20Content%20Extractor)
