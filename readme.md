@@ -136,3 +136,5 @@ Please add your name in the list in the following format:
 - profumato4 - [Java - Java Singleton Pattern](Java/Hackerrank/Java%20Singleton%20Pattern)
 - profumato4 - [Java - Java Visitor Pattern](Java/Hackerrank/Java%20Visitor%20Pattern)
 - profumato4 - [Java - Java Varargs Simple Addition](Java/Hackerrank/Java%20Varargs%20Simple%20Addition)
+- profumato4 - [C - Hello World in C](C/Hackerrank/Hello%20World%20in%20C)
+- profumato4 - [C - Playing With Characters](C/Hackerrank/Playing%20With%20Characters)
