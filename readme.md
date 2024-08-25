@@ -145,3 +145,7 @@ Please add your name in the list in the following format:
 - profumato4 - [Java - Java loops II](Java/Hackerrank/Java%20Loops%20II)
 - profumato4 - [Java - Java Output Formatting](Java/Hackerrank/Java%20Output%20Formatting)
 - profumato4 - [Java - Java Regex](Java/Hackerrank/Java%20Regex)
+- profumato4 - [Java - Java SHA 256](Java/Hackerrank/Java%20SHA%20256)
+- profumato4 - [Java - Java Static Initializer Block](Java/Hackerrank/Java%20Static%20Initializer%20Block)
+- profumato4 - [Java - Java Stdin and Stdout I](Java/Hackerrank/Java%20Stdin%20and%20Stdout%20I)
+- profumato4 - [Java - Java Stdin and Stdout II](Java/Hackerrank/Java%20Stdin%20and%20Stdout%20II)
