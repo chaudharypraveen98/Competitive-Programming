@@ -138,3 +138,4 @@ Please add your name in the list in the following format:
 - profumato4 - [Java - Java Varargs Simple Addition](Java/Hackerrank/Java%20Varargs%20Simple%20Addition)
 - profumato4 - [C - Hello World in C](C/Hackerrank/Hello%20World%20in%20C)
 - profumato4 - [C - Playing With Characters](C/Hackerrank/Playing%20With%20Characters)
+- profumato4 - [C - Sum and Difference of Two Numbers](C/Hackerrank/Sum%20and%20Difference%20of%20Two%20Numbers)
