@@ -1,2 +1,146 @@
-## **[Java Anagrams](https://www.hackerrank.com/challenges/java-anagrams)** 
-Two strings, <span style="font-size: 100%; display: inline-block;" class="MathJax_SVG" id="MathJax-Element-1-Frame"><svg xmlns:xlink="http://www.w3.org/1999/xlink" width="1.23ex" height="1.676ex" style="vertical-align: -0.338ex;" viewBox="0 -576.1 529.5 721.6" role="img" focusable="false"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="matrix(1 0 0 -1 0 0)"><path stroke-width="1" d="M33 157Q33 258 109 349T280 441Q331 441 370 392Q386 422 416 422Q429 422 439 414T449 394Q449 381 412 234T374 68Q374 43 381 35T402 26Q411 27 422 35Q443 55 463 131Q469 151 473 152Q475 153 483 153H487Q506 153 506 144Q506 138 501 117T481 63T449 13Q436 0 417 -8Q409 -10 393 -10Q359 -10 336 5T306 36L300 51Q299 52 296 50Q294 48 292 46Q233 -10 172 -10Q117 -10 75 30T33 157ZM351 328Q351 334 346 350T323 385T277 405Q242 405 210 374T160 293Q131 214 119 129Q119 126 119 118T118 106Q118 61 136 44T179 26Q217 26 254 59T298 110Q300 114 325 217T351 328Z"></path></g></svg></span> and <span style="font-size: 100%; display: inline-block;" class="MathJax_SVG" id="MathJax-Element-2-Frame"><svg xmlns:xlink="http://www.w3.org/1999/xlink" width="0.998ex" height="2.176ex" style="vertical-align: -0.338ex;" viewBox="0 -791.3 429.5 936.9" role="img" focusable="false"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="matrix(1 0 0 -1 0 0)"><path stroke-width="1" d="M73 647Q73 657 77 670T89 683Q90 683 161 688T234 694Q246 694 246 685T212 542Q204 508 195 472T180 418L176 399Q176 396 182 402Q231 442 283 442Q345 442 383 396T422 280Q422 169 343 79T173 -11Q123 -11 82 27T40 150V159Q40 180 48 217T97 414Q147 611 147 623T109 637Q104 637 101 637H96Q86 637 83 637T76 640T73 647ZM336 325V331Q336 405 275 405Q258 405 240 397T207 376T181 352T163 330L157 322L136 236Q114 150 114 114Q114 66 138 42Q154 26 178 26Q211 26 245 58Q270 81 285 114T318 219Q336 291 336 325Z"></path></g></svg></span>, are called anagrams if they contain all the same characters in the same frequencies. For example, the anagrams of <code>CAT</code> are <code>CAT</code>, <code>ACT</code>, <code>TAC</code>, <code>TCA</code>, <code>ATC</code>, and <code>CTA</code>.<br>Complete the function in the editor. If and are case-insensitive anagrams, print "Anagrams"; otherwise, print "Not Anagrams" instead.<br><br>**Sample Input 0**<br><code></code><br><br>**Sample Output 0**<br><code></code><br><br>**Explanation 0**<br><br><br>**Sample Input 1**<br><code></code><br><br>**Sample Output 1**<br><code></code><br><br>**Explanation 1**<br><br><br>**Sample Input 2**<br><code></code><br><br>**Sample Output 2**<br><code></code><br><br>**Explanation 2**<br><br>
+## [Java Anagrams](https://www.hackerrank.com/challenges/java-anagrams)
+
+![Java](https://img.shields.io/badge/java-%23ED8B00.svg?style=for-the-badge&logo=openjdk&logoColor=white) ![HackerRank](https://img.shields.io/badge/-Hackerrank-2EC866?style=for-the-badge&logo=HackerRank&logoColor=white)
+
+| Difficulty | Max Score | Success Ratio |
+|:-----------|:------------:|------------:|
+| Easy       | 10      | 93.27%        |
+
+Two strings,  *[SVG image]*  and  *[SVG image]* , are called anagrams if they contain all the same characters in the same frequencies. For this challenge, the test is not case\-sensitive. For example, the anagrams of `CAT` are `CAT`, `ACT`, `tac`, `TCA`, `aTC`, and `CtA`.
+
+
+**Function Description** 
+
+
+Complete the *isAnagram* function in the editor. 
+
+
+*isAnagram* has the following parameters: 
+
+
+* *string a:* the first string
+* *string b:* the second string
+
+
+**Returns** 
+
+
+* *boolean:* If  *[SVG image]*  and  *[SVG image]*  are case\-insensitive anagrams, return true. Otherwise, return false.
+**Input Format**
+
+The first line contains a string  *[SVG image]* .   
+
+The second line contains a string  *[SVG image]* .
+
+**Constraints**
+
+* *[SVG image]*
+* Strings  *[SVG image]*  and  *[SVG image]*  consist of English alphabetic characters.
+* The comparison should NOT be case sensitive.
+**Sample Input 0**
+
+
+```
+anagram
+margana
+
+```
+
+**Sample Output 0**
+
+
+```
+Anagrams
+
+```
+
+**Explanation 0**
+
+
+
+| Character | Frequency: `anagram` | Frequency: `margana` |
+| --- | --- | --- |
+| `A` or `a` | 3 | 3 |
+| `G` or `g` | 1 | 1 |
+| `N` or `n` | 1 | 1 |
+| `M` or `m` | 1 | 1 |
+| `R` or `r` | 1 | 1 |
+
+
+The two strings contain all the same letters in the same frequencies, so we print "Anagrams".
+
+**Sample Input 1**
+
+
+```
+anagramm
+marganaa
+
+```
+
+**Sample Output 1**
+
+
+```
+Not Anagrams
+
+```
+
+**Explanation 1**
+
+
+
+| Character | Frequency: `anagramm` | Frequency: `marganaa` |
+| --- | --- | --- |
+| `A` or `a` | 3 | 4 |
+| `G` or `g` | 1 | 1 |
+| `N` or `n` | 1 | 1 |
+| `M` or `m` | 2 | 1 |
+| `R` or `r` | 1 | 1 |
+
+
+The two strings don't contain the same number of `a`'s and `m`'s, so we print "Not Anagrams".
+
+**Sample Input 2**
+
+
+```
+Hello
+hello
+
+```
+
+**Sample Output 2**
+
+
+```
+Anagrams
+
+```
+
+**Explanation 2**
+
+
+
+| Character | Frequency: `Hello` | Frequency: `hello` |
+| --- | --- | --- |
+| `E` or `e` | 1 | 1 |
+| `H` or `h` | 1 | 1 |
+| `L` or `l` | 2 | 2 |
+| `O` or `o` | 1 | 1 |
+
+
+The two strings contain all the same letters in the same frequencies, so we print "Anagrams".
+
+
+## 💡 Hints 
+
+## ➡️ Approach 
+
+## ✅ Detailed Solution
+[View Solution : Java Anagrams](./Solution.java)
+
+| Submissions | Leaderboard| Discussions | Editorial |
+|:-----------|:------------:|------------:|------------:|
+| [📝 My Submission](https://www.hackerrank.com/challenges/java-anagrams/submissions) | [🏆 Track our position](https://www.hackerrank.com/challenges/java-anagrams/leaderboard) | [🤔 Help from Community](https://www.hackerrank.com/challenges/java-anagrams/forum) | [✍️ Editorial](https://www.hackerrank.com/challenges/java-anagrams/editorial) |
+

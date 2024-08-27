@@ -1,3 +1,0 @@
-## **[Java Varargs - Simple Addition](https://www.hackerrank.com/challenges/simple-addition-varargs)** 
-You are given a class Solution and its main method in the editor.
-Your task is to create the class Add and the required methods so that the code prints the sum of the numbers passed to the function add.<br>Note: Your add method in the Add class must print the sum as given in the Sample Output<br><br>**Sample Input 0**<br><br>**Sample Output 0**<br><br>

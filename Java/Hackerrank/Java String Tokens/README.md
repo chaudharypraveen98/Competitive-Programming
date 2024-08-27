@@ -1,2 +1,65 @@
-## **[Java String Tokens](https://www.hackerrank.com/challenges/java-string-tokens)** 
-Given a string, <span style="font-size: 100%; display: inline-block;" class="MathJax_SVG" id="MathJax-Element-1-Frame"><svg xmlns:xlink="http://www.w3.org/1999/xlink" width="1.09ex" height="1.676ex" style="vertical-align: -0.338ex;" viewBox="0 -576.1 469.5 721.6" role="img" focusable="false"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="matrix(1 0 0 -1 0 0)"><path stroke-width="1" d="M131 289Q131 321 147 354T203 415T300 442Q362 442 390 415T419 355Q419 323 402 308T364 292Q351 292 340 300T328 326Q328 342 337 354T354 372T367 378Q368 378 368 379Q368 382 361 388T336 399T297 405Q249 405 227 379T204 326Q204 301 223 291T278 274T330 259Q396 230 396 163Q396 135 385 107T352 51T289 7T195 -10Q118 -10 86 19T53 87Q53 126 74 143T118 160Q133 160 146 151T160 120Q160 94 142 76T111 58Q109 57 108 57T107 55Q108 52 115 47T146 34T201 27Q237 27 263 38T301 66T318 97T323 122Q323 150 302 164T254 181T195 196T148 231Q131 256 131 289Z"></path></g></svg></span>, matching the regular expression <code>[A-Za-z !,?._'@]+</code>, split the string into <em>tokens</em>. We define a token to be one or more consecutive English alphabetic letters. Then, print the number of tokens, followed by each token on a new line.<br>Note: You may find the String.split method helpful in completing this challenge.<br><br>**Sample Input 0**<br><br>**Sample Output 0**<br><br>**Explanation 0**<br><br>
+## [Java String Tokens](https://www.hackerrank.com/challenges/java-string-tokens)
+
+![Java](https://img.shields.io/badge/java-%23ED8B00.svg?style=for-the-badge&logo=openjdk&logoColor=white) ![HackerRank](https://img.shields.io/badge/-Hackerrank-2EC866?style=for-the-badge&logo=HackerRank&logoColor=white)
+
+| Difficulty | Max Score | Success Ratio |
+|:-----------|:------------:|------------:|
+| Easy       | 15      | 82.41%        |
+
+Given a string,  *[SVG image]* , matching the regular expression `[A-Za-z !,?._'@]+`, split the string into *tokens*. We define a token to be one or more consecutive English alphabetic letters. Then, print the number of tokens, followed by each token on a new line.
+
+
+**Note:** You may find the [String.split](https://docs.oracle.com/javase/8/docs/api/java/lang/String.html#split-java.lang.String-) method helpful in completing this challenge.
+
+**Input Format**
+
+A single string,  *[SVG image]* .
+
+**Constraints**
+
+* *[SVG image]*
+* *[SVG image]*  is composed of *any* of the following: English alphabetic letters, blank spaces, exclamation points (`!`), commas (`,`), question marks (`?`), periods (`.`), underscores (`_`), apostrophes (`'`), and at symbols (`@`).
+**Output Format**
+
+On the first line, print an integer,  *[SVG image]* , denoting the number of tokens in string  *[SVG image]*  (they *do not* need to be unique). Next, print each of the  *[SVG image]*  tokens on a new line in the same order as they appear in input string  *[SVG image]* .
+
+**Sample Input**
+
+
+```
+He is a very very good boy, isn't he?
+
+```
+**Sample Output**
+
+
+```
+10
+He
+is
+a
+very
+very
+good
+boy
+isn
+t
+he
+
+```
+**Explanation**
+
+We consider a token to be a contiguous segment of alphabetic characters. There are a total of  *[SVG image]*  such tokens in string  *[SVG image]* , and each token is printed in the same order in which it appears in string  *[SVG image]* .
+
+
+## 💡 Hints 
+
+## ➡️ Approach 
+
+## ✅ Detailed Solution
+[View Solution : Java String Tokens](./Solution.java)
+
+| Submissions | Leaderboard| Discussions | Editorial |
+|:-----------|:------------:|------------:|------------:|
+| [📝 My Submission](https://www.hackerrank.com/challenges/java-string-tokens/submissions) | [🏆 Track our position](https://www.hackerrank.com/challenges/java-string-tokens/leaderboard) | [🤔 Help from Community](https://www.hackerrank.com/challenges/java-string-tokens/forum) | [✍️ Editorial](https://www.hackerrank.com/challenges/java-string-tokens/editorial) |
+
