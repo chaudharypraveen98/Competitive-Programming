@@ -149,3 +149,5 @@ Please add your name in the list in the following format:
 - profumato4 - [Java - Java Static Initializer Block](Java/Hackerrank/Java%20Static%20Initializer%20Block)
 - profumato4 - [Java - Java Stdin and Stdout I](Java/Hackerrank/Java%20Stdin%20and%20Stdout%20I)
 - profumato4 - [Java - Java Stdin and Stdout II](Java/Hackerrank/Java%20Stdin%20and%20Stdout%20II)
+- profuamto4 - [C - Funcitons in C](C/Hackerrank/Functions%20in%20C)
+- profumato4 - [C - Pointers in C](C/Hackerrank/Pointers%20in%20C)
