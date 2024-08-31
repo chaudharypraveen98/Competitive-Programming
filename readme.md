@@ -153,3 +153,4 @@ Please add your name in the list in the following format:
 - profumato4 - [C - Pointers in C](C/Hackerrank/Pointers%20in%20C)
 - profumato4 - [C - Conditional Statements in C](C/Hackerrank/Conditional%20Statements%20in%20C)
 - profumato4 - [C - For loop in C](C/Hackerrank/For%20Loop%20in%20C)
+- profumato4 - [C - Sum of Digits of a Five Digit Number](C/Hackerrank/Sum%20of%20Digits%20of%20a%20Five%20Digit%20Number)
