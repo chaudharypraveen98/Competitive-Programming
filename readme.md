@@ -152,3 +152,4 @@ Please add your name in the list in the following format:
 - profuamto4 - [C - Funcitons in C](C/Hackerrank/Functions%20in%20C)
 - profumato4 - [C - Pointers in C](C/Hackerrank/Pointers%20in%20C)
 - profumato4 - [C - Conditional Statements in C](C/Hackerrank/Conditional%20Statements%20in%20C)
+- profumato4 - [C - For loop in C](C/Hackerrank/For%20Loop%20in%20C)
