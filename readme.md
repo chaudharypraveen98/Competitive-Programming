@@ -151,3 +151,4 @@ Please add your name in the list in the following format:
 - profumato4 - [Java - Java Stdin and Stdout II](Java/Hackerrank/Java%20Stdin%20and%20Stdout%20II)
 - profuamto4 - [C - Funcitons in C](C/Hackerrank/Functions%20in%20C)
 - profumato4 - [C - Pointers in C](C/Hackerrank/Pointers%20in%20C)
+- profumato4 - [C - Conditional Statements in C](C/Hackerrank/Conditional%20Statements%20in%20C)
