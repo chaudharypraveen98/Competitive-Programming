@@ -159,3 +159,5 @@ Please add your name in the list in the following format:
 - profumato4 - [C - 1D Arrays in C](C/Hackerrank/1D%20Arrays%20in%20C)
 - profumato4 - [C - Array Reversal](C/Hackerrank/Array%20Reversal)
 - profumato4 - [C - Printing Tokens](C/Hackerrank/Printing%20Tokens)
+- profumato4 - [C - Digit Frequency](C/Hackerrank/Digit%20Frequency)
+
