@@ -155,3 +155,4 @@ Please add your name in the list in the following format:
 - profumato4 - [C - For loop in C](C/Hackerrank/For%20Loop%20in%20C)
 - profumato4 - [C - Sum of Digits of a Five Digit Number](C/Hackerrank/Sum%20of%20Digits%20of%20a%20Five%20Digit%20Number)
 - profumato4 - [C - Bitwise Operators](C/Hackerrank/Bitwise%20Operators)
+- profumato4 - [C - Printing Pattern Using Loops](C/Hackerrank/Printing%20Pattern%20Using%20Loops)
