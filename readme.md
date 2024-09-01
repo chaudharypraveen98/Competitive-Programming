@@ -170,6 +170,7 @@ Please add your name in the list in the following format:
 - profumato4 - [C - Sorting Array of Strings](C/Hackerrank/Sorting%20Array%20of%20Strings)
 - profumato4 - [C - Structuring the Document](C/Hackerrank/Structuring%20the%20Document)
 - profumato4 - [C - Students Marks Sum](C/Hackerrank/Students%20Marks%20Sum)
+- profumato4 - [C - Variadic functions in C](C/Hackerrank/Variadic%20functions%20in%20C)
 
 
 
