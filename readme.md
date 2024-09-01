@@ -168,6 +168,7 @@ Please add your name in the list in the following format:
 - profumaot4 - [C - Querying the Document](C/Hackerrank/Querying%20the%20Document)
 - profumato4 - [C - Small Triangles Large Triangles](C/Hackerrank/Small%20Triangles%20Large%20Triangles)
 - profumato4 - [C - Sorting Array of Strings](C/Hackerrank/Sorting%20Array%20of%20Strings)
+- profumato4 - [C - Structuring the Document](C/Hackerrank/Structuring%20the%20Document)
 
 
 
