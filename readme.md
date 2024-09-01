@@ -164,6 +164,7 @@ Please add your name in the list in the following format:
 - profumato4 - [C - Boxes through a Tunnel](C/Hackerrank/Boxes%20through%20a%20Tunnel)
 - profumato4 - [C - Calculate the Nth term](C/Hackerrank/Calculate%20the%20Nth%20term)
 - profumato4 - [C - Permutations of Strings](C/Hackerrank/Permutations%20of%20Strings)
+- profumato4 - [C - Post Transition](C/Hackerrank/Post%20Transition)
 
 
 
