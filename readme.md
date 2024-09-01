@@ -163,5 +163,7 @@ Please add your name in the list in the following format:
 - profumato4 - [C - Dynamic Array in C](C/Hackerrank/Dynamic%20Array%20in%20C)
 - profumato4 - [C - Boxes through a Tunnel](C/Hackerrank/Boxes%20through%20a%20Tunnel)
 - profumato4 - [C - Calculate the Nth term](C/Hackerrank/Calculate%20the%20Nth%20term)
+- profumato4 - [C - Permutations of Strings](C/Hackerrank/Permutations%20of%20Strings)
+
 
 
