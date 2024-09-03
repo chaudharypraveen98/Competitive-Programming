@@ -3,14 +3,14 @@ class Solution:
         self.length = 0
         self.target = 0
 
-    def combinations(self, arr, start, path, res):
+    def backtrack(self, arr, start, path, res):
         for i in range(start, len(arr)):
             if len(path) < self.length:
                 path.append(arr[i])
                 if sum(path) == self.target and len(path) == self.length:
                     res.append(path[:])
                 if sum(path) < self.target:
-                    self.combinations(arr, i+1, path, res)
+                    self.backtrack(arr, i+1, path, res)
                 path.pop()
 
     def combinationSum(self, K, target):
@@ -18,7 +18,7 @@ class Solution:
         res = []
         self.length = K
         self.target = target
-        self.combinations(arr, 0, [], res)
+        self.backtrack(arr, 0, [], res)
         return res
 
 

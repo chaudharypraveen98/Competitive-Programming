@@ -1,15 +1,15 @@
 class Solution:
 
-    def combinations(self, arr, start, path, res):
+    def backtrack(self, arr, start, path, res):
         for i in range(start, len(arr)):
             path.append(arr[i])
             res.append(path[:])
-            self.combinations(arr, i+1, path, res)
+            self.backtrack(arr, i+1, path, res)
             path.pop()
 
     def combinationSum(self, arr):
         res = []
-        self.combinations(arr, 0, [], res)
+        self.backtrack(arr, 0, [], res)
         return res
 
 
