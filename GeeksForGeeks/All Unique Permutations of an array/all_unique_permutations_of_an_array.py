@@ -1,20 +1,17 @@
 class Solution:
-    def backtrack(self, arr, visited, path, res):
+    def backtrack(self, arr, path, res):
         if len(arr) == 0:
-            key = "".join(map(str, path))
-            if not key in visited:
-                visited.add(key)
-                res.append(path[:])
+            res.append(path[:])
             return
         for i in range(0, len(arr)):
-            path.append(arr[i])
-            self.backtrack(arr[:i]+arr[i+1:], visited, path, res)
-            path.pop()
+            if i > 0 and arr[i] == arr[i - 1]:
+                continue
+            self.backtrack(arr[:i]+arr[i+1:], path+[arr[i]], res)
         return res
 
     def uniquePerms(self, arr, n):
         arr.sort()
-        return self.backtrack(arr, set(), [], [])
+        return self.backtrack(arr, [], [])
 
 
 if __name__ == '__main__':
