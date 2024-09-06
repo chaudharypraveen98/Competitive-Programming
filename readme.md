@@ -1,84 +1,117 @@
 <center>
 
-# <img src="https://i.ibb.co/r07nj1R/banner-optimized.png"  alt="coding"/>
+# [![Banner Image](https://i.postimg.cc/KzkzX3ZL/banner-optimized.png)](https://postimg.cc/1nSPwtV5)
 
 ![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54) ![Go](https://img.shields.io/badge/go-%2300ADD8.svg?style=for-the-badge&logo=go&logoColor=white) ![Rust](https://img.shields.io/badge/rust-%23000000.svg?style=for-the-badge&logo=rust&logoColor=white) ![C](https://img.shields.io/badge/c-%2300599C.svg?style=for-the-badge&logo=c&logoColor=white) ![Java](https://img.shields.io/badge/java-%23ED8B00.svg?style=for-the-badge&logo=openjdk&logoColor=white) ![C++](https://img.shields.io/badge/c++-%2300599C.svg?style=for-the-badge&logo=c%2B%2B&logoColor=white) ![HackerRank](https://img.shields.io/badge/-Hackerrank-2EC866?style=for-the-badge&logo=HackerRank&logoColor=white) ![GeeksForGeeks](https://img.shields.io/badge/GeeksforGeeks-gray?style=for-the-badge&logo=geeksforgeeks&logoColor=35914c)
 
 
 </center>
+Here's a refined version of the Markdown with better formatting, clearer instructions, and consistent tone:
 
-## How to Contribute and Create a PR on this Repository?
-### 1. Clone this repository.
-You first need to **fork** the original repo, **star** if you like that and you need to create a local copy of this repository to be able to contribute to the same. Copy the following command and paste it in your terminal.
+---
 
-`git clone https://github.com/username/Competitive-Programming`
+## How to Contribute and Create a Pull Request (PR)
 
+### 1. Fork and Clone the Repository
 
-Please ensure that you add YOUR username in the command and do this after Forking the Repository.
+First, **fork** the repository, and **star** it if you like. To contribute, create a local copy of the repository by running the following command in your terminal:
+
+```bash
+git clone https://github.com/<your-username>/Competitive-Programming
+```
+
+Ensure to replace `your-username` with your GitHub username. You must **fork** the repository before cloning it.
 
 ### 2. Create a New Branch
-After successfully cloning the repository, you need to now create a separate branch for yourself to not disturb the workflow of the repository. If you aren't already inside the main folder copy this command in terminal and press enter.
 
-`cd Competitive-Programming`
+Once cloned, navigate to the repository directory:
 
-Now that you are inside the main folder, use this command to create a new branch for yourself.
+```bash
+cd Competitive-Programming
+```
 
-`git branch (name of your branch)`
+Now, create a new branch to make your changes. Name the branch after your username:
 
-Please ensure that the name of your branch is your username.
+```bash
+git branch <your-branch-name>
+```
 
-### 3. Switch to your New Branch
-To start working and to push code from your own branch, please execute the following command in the Terminal.
+Replace `your-branch-name` with your desired branch name, preferably your username, to avoid conflicts.
 
-`git checkout (name of your branch)`
+### 3. Switch to Your Branch
 
-You should receive a notification which will state that you have switched to your newly created branch.
+To start working on your new branch, switch to it by running:
 
-### 4. ADD YOUR FAVORITE PIECE OF CODE IN YOUR FAVOURITE PROGRAMING LANGUAGE
-Check the excel sheet to see which problems require solution and update the sheet after making pull request .Whole repo is divided into Four languages. Click the link to view unsolved questions
-[Python](https://docs.google.com/spreadsheets/d/1j2M45lmeV6dykp_-xMDf91_6bDhYFeVXwVlgs7CBUxo/edit#gid=2133262884) ,[Java](https://docs.google.com/spreadsheets/d/1j2M45lmeV6dykp_-xMDf91_6bDhYFeVXwVlgs7CBUxo/edit#gid=1055454945), [C](https://docs.google.com/spreadsheets/d/1j2M45lmeV6dykp_-xMDf91_6bDhYFeVXwVlgs7CBUxo/edit#gid=1394665650), [C++](https://docs.google.com/spreadsheets/d/1j2M45lmeV6dykp_-xMDf91_6bDhYFeVXwVlgs7CBUxo/edit#gid=0) Try to optimize the code as much as possible. Leave comments to increase the readability of the program
+```bash
+git checkout <your-branch-name>
+```
 
-### 5. Sync all Updates
-The part you have been waiting for , execute the following command in your terminal.
+You will get a confirmation that you've successfully switched to your branch.
 
-`git add .`
+### 4. Add Your Programming Solution
 
-This will add all the files in your local repository. After this execute
+Add your solution in any programming language. Be sure to:
+- Optimize the code as much as possible.
+- Include comments to improve readability.
 
-`git commit -m "ADD YOUR MESSAGE HERE (PREFERABLY THE NAME OF YOUR PROJECT)"`
+### 5. Commit and Push Your Changes
 
-Note that it is mandatory for you to add a Commit Message for others to understand what from where you have solved the question like ""FROM HACKERRANK" OR "FROM LEETCODE".All the letters must be capitalize. Now finally to push updates to the new branch, execute the following:
+After making changes, sync them to the repository. Start by adding all changes:
 
-`git push --set-upstream origin (name of your branch)`
+```bash
+git add .
+```
 
-While you are at it, also execute the following command which will specify a new remote upstream repository (the cone you are looking at).
+Now, commit your changes with a descriptive message:
 
-`git remote add upstream https://github.com/chaudharypraveen98/Competitive-Programming`
+```bash
+git commit -m "ADD YOUR MESSAGE HERE (E.g., SOLVED HACKERRANK PROBLEM)"
+```
 
-### 6. Keep your Repository in Sync
-You need to use the following commands to help you sync all the branches with their respective commits associated with this repository and stay in loop. Copy these commands and execute:
+Commit messages should describe where the problem was solved, like **"FROM HACKERRANK"** or **"FROM LEETCODE"**. Use all caps for platform names.
 
-`git fetch upstream`
+Next, push your changes to your branch:
 
-`git checkout master`
+```bash
+git push --set-upstream origin <your-branch-name>
+```
 
-Post this you simply need to merge all the changes you made.
+Now, add the upstream remote repository:
 
-`git merge upstream/master`
+```bash
+git remote add upstream https://github.com/chaudharypraveen98/Competitive-Programming
+```
 
-6. Create a Pull Request (The Part you have been waiting for)
-Now that you are done with the most complex parts of the process, you can just go to your forked repository and Click on **New Pull Request** towards the left hand side of the page and You're Done!
-Congratulations on successfully creating a Pull Request there!
+### 6. Keep Your Repository in Sync
 
-7. At last please update the excel sheet
+Periodically, sync your repository with the upstream repository to stay updated:
 
-## Guidelines for code base :
-* Add **comments** to your code in a **new line**
-* Follow **standard** structure of the particular language
+```bash
+git fetch upstream
+git checkout master
+git merge upstream/master
+```
 
-## Where to upload the files 📂
+### 7. Create a Pull Request (PR)
 
-* Your files should be uploaded inside the **code** folder into the corresponding language folder (For instance, if you wrote code for an Algorithm Implementation in Java, it goes inside the Java/Hackerrank folder).
+Once your changes are ready, go to your forked repository and click on **New Pull Request**. Follow the on-screen instructions to complete the PR submission.
+
+Congratulations! You've successfully created a Pull Request!
+
+### 8. Check if you find any relevant issue and link PR
+
+Lastly, don't forget to update the corresponding issue if opened.
+
+---
+
+## Code Base Guidelines
+
+- Add **comments** in a **new line** to explain your code.
+- Follow the **standard structure** for the programming language.
+
+### Where to Upload Files 📂
+
+- Upload your files inside the **code** folder under the corresponding language sub-folder. (e.g., Java/Hackerrank for an algorithm implementation in Java).
 
 ## Contributors
 Please add your name in the list in the following format:
