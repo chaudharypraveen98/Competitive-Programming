@@ -6,9 +6,6 @@
 
 
 </center>
-Here's a refined version of the Markdown with better formatting, clearer instructions, and consistent tone:
-
----
 
 ## How to Contribute and Create a Pull Request (PR)
 
