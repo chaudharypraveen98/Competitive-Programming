@@ -1,7 +1,17 @@
-## **[Hex Color Code](https://www.hackerrank.com/challenges/hex-color-code)** 
-CSS colors are defined using a hexadecimal (HEX) notation for the combination of Red, Green, and Blue color values (RGB).
+## [Hex Color Code](https://www.hackerrank.com/challenges/hex-color-code)
 
-Specifications of HEX Color Code
+![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54) ![HackerRank](https://img.shields.io/badge/-Hackerrank-2EC866?style=for-the-badge&logo=HackerRank&logoColor=white)
+
+| Difficulty | Max Score | Success Ratio |
+| :--------- | :-------: | ------------: |
+| Easy       |    30     |        96.72% |
+
+*CSS* colors are defined using a hexadecimal (*HEX*) notation for the combination of Red, Green, and Blue color values (*RGB*).
+
+
+*Specifications of HEX Color Code*  
+
+
 
 ■ It must start with a '#' symbol.
 
@@ -11,7 +21,11 @@ Specifications of HEX Color Code
 
 ■ A-F letters can be lower case. ( a,b,c,d,e, and F are also valid digits).
 
-Examples
+
+**Examples** 
+
+
+
 ```
 Valid Hex Color Codes
 #FFF 
@@ -22,28 +36,42 @@ Invalid Hex Color Codes
 #fffabg
 #abcf
 #12365erff
+
 ```
+
 
 You are given **N** lines of CSS code. Your task is to print all valid Hex Color Codes, in order of their occurrence from top to bottom.
 
-CSS Code Pattern
+*CSS Code Pattern*
+
+
+
 ```
 Selector
 {
 	Property: Value;
 }
+
 ```
 
-#### Input Format
-
+**Input Format**
 The first line contains **N**, the number of code lines.
 The next **N** lines contains CSS Codes.
 
-#### Output Format
 
-Output the color codes with '#' symbols on separate lines.
+**Constraints**
 
-####Sample Input
+
+ *[SVG image]*   
+
+
+**Output Format**
+
+Output the color codes with '*\#*' symbols on separate lines.
+
+**Sample Input**
+
+
 ```
 11
 #BED
@@ -56,10 +84,12 @@ Output the color codes with '#' symbols on separate lines.
 {
     background-color: #ABC;
     border: 2px dashed #fff;
-}  
-``` 
+}   
 
-#### Sample Output
+```
+**Sample Output**
+
+
 ```
 #FfFdF8
 #aef
@@ -67,20 +97,44 @@ Output the color codes with '#' symbols on separate lines.
 #fff
 #ABC
 #fff
+
 ```
+**Explanation**
 
-#### Explanation
+*\#BED* and *\#Cab* satisfy the Hex Color Code criteria, but they are used as selectors and not as color codes in the given CSS.   
 
-<p>#BED and #Cab satisfy the Hex Color Code criteria, but they are used as selectors and not as color codes in the given CSS.</p>
 
-Hence, the valid color codes are:
-```
-#FfFdF8
-#aef
-#f9f9f9
-#fff
-#ABC
-#fff
-```
 
-Note: There are no comments ( // or /* */) in CSS Code.
+Hence, the valid color codes are:  
+
+
+
+*\#FfFdF8  
+
+\#aef  
+
+\#f9f9f9  
+
+\#fff  
+
+\#ABC  
+
+\#fff*  
+
+
+
+**Note**: There are no comments ( *// or /\* \*/*) in CSS Code.  
+
+
+
+## 💡 Hints 
+
+## ➡️ Approach 
+
+## ✅ Detailed Solution
+[View Solution : Hex Color Code](./hex_color_code.py)
+
+| Submissions                                                                         |                                       Leaderboard                                        |                                                                         Discussions |                                                                     Editorial |
+| :---------------------------------------------------------------------------------- | :--------------------------------------------------------------------------------------: | ----------------------------------------------------------------------------------: | ----------------------------------------------------------------------------: |
+| [📝 My Submission](https://www.hackerrank.com/challenges/hex-color-code/submissions) | [🏆 Track our position](https://www.hackerrank.com/challenges/hex-color-code/leaderboard) | [🤔 Help from Community](https://www.hackerrank.com/challenges/hex-color-code/forum) | [✍️ Editorial](https://www.hackerrank.com/challenges/hex-color-code/editorial) |
+

@@ -1,15 +1,23 @@
-## **[Designer Door Mat](https://www.hackerrank.com/challenges/designer-door-mat)** 
-Mr. Vincent works in a door mat manufacturing company. One day, he designed a new door mat with the following specifications:  
+## [Designer Door Mat](https://www.hackerrank.com/challenges/designer-door-mat)
+
+![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54) ![HackerRank](https://img.shields.io/badge/-Hackerrank-2EC866?style=for-the-badge&logo=HackerRank&logoColor=white)
+
+| Difficulty | Max Score | Success Ratio |
+| :--------- | :-------: | ------------: |
+| Easy       |    10     |        98.12% |
+
+Mr. Vincent works in a door mat manufacturing company. One day, he designed a new door mat with the following specifications: 
 
 
-<ul>
-<li>Mat size must be X. ( is an odd natural number, and is times .)</li>
-<li>The design should have 'WELCOME' written in the center.</li>
-<li>The design pattern should only use |, . and - characters.</li>
-</ul> 
+* Mat size must be  *[SVG image]* X *[SVG image]* . ( *[SVG image]*  is an odd natural number, and  *[SVG image]*  is  *[SVG image]*  times  *[SVG image]* .)
+* The design should have 'WELCOME' written in the center.
+* The design pattern should only use `|`, `.` and `-` characters.
 
 
-##### Sample Designs  
+**Sample Designs**
+
+
+
 ```
     Size: 7 x 21 
     ---------.|.---------
@@ -21,7 +29,6 @@ Mr. Vincent works in a door mat manufacturing company. One day, he designed a ne
     ---------.|.---------
     
     Size: 11 x 33
-
     ---------------.|.---------------
     ------------.|..|..|.------------
     ---------.|..|..|..|..|.---------
@@ -33,21 +40,30 @@ Mr. Vincent works in a door mat manufacturing company. One day, he designed a ne
     ---------.|..|..|..|..|.---------
     ------------.|..|..|.------------
     ---------------.|.---------------
+
 ```
 
-#### Input Format
+**Input Format**
+
 A single line containing the space separated values of **N** and **M**.
 
-##### Output Format
+**Constraints**
+
+* *[SVG image]*
+* *[SVG image]*
+**Output Format**
+
 Output the design pattern.
 
-##### Sample Input
-`9 27`
-
-
-##### Sample Output
+**Sample Input**
 ```
+9 27
 
+```
+**Sample Output**
+
+
+```
 ------------.|.------------
 ---------.|..|..|.---------
 ------.|..|..|..|..|.------
@@ -59,3 +75,15 @@ Output the design pattern.
 ------------.|.------------
 
 ```
+
+## 💡 Hints 
+
+## ➡️ Approach 
+
+## ✅ Detailed Solution
+[View Solution : Designer Door Mat](./designer_door_mat.py)
+
+| Submissions                                                                            |                                         Leaderboard                                         |                                                                            Discussions |                                                                        Editorial |
+| :------------------------------------------------------------------------------------- | :-----------------------------------------------------------------------------------------: | -------------------------------------------------------------------------------------: | -------------------------------------------------------------------------------: |
+| [📝 My Submission](https://www.hackerrank.com/challenges/designer-door-mat/submissions) | [🏆 Track our position](https://www.hackerrank.com/challenges/designer-door-mat/leaderboard) | [🤔 Help from Community](https://www.hackerrank.com/challenges/designer-door-mat/forum) | [✍️ Editorial](https://www.hackerrank.com/challenges/designer-door-mat/editorial) |
+
