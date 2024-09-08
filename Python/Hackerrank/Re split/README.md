@@ -1,3 +1,0 @@
-## **[Re.split()](https://www.hackerrank.com/challenges/re-split)** 
-Check Tutorial tab to know how to to solve.<br>You are given a string `s`</span> consisting only of digits <code>0-9</code>, commas <code>,</code>, and dots <code>.</code><br>Your task is to complete the <code>regex_pattern</code> defined below, which will be used to <em>re.split()</em> all of the <code>,</code> and <code>.</code> symbols in `s`
-<br>It’s guaranteed that every comma and every dot in `s` is preceeded and followed by a digit.<br><br>**Sample Input 0**<br><code>100,000,000.000</code><br><br>**Sample Output 0**<br><code>100</code><br><br>

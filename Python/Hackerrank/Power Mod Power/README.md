@@ -1,2 +1,0 @@
-## **[Power - Mod Power](https://www.hackerrank.com/challenges/python-power-mod-power)** 
-So far, we have only heard of Python's powers. Now, we will witness them!<br>Powers or exponents in Python can be calculated using the built-in power function. Call the power function as shown below:<br>or<br>It's also possible to calculate .<br><br><br><br><br><br><br><br><br>

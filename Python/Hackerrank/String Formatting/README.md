@@ -1,33 +1,54 @@
-## **[String Formatting](https://www.hackerrank.com/challenges/python-string-formatting)**
+## [String Formatting](https://www.hackerrank.com/challenges/python-string-formatting)
+
+![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54) ![HackerRank](https://img.shields.io/badge/-Hackerrank-2EC866?style=for-the-badge&logo=HackerRank&logoColor=white)
+
+| Difficulty | Max Score | Success Ratio |
+| :--------- | :-------: | ------------: |
+| Easy       |    10     |        92.23% |
+
 Given an integer,**n** , print the following values for each integer i from 1 to n:
 
-- Decimal
-- Octal
-- Hexadecimal (capitalized)
-- Binary
 
-#### Function Description
+1. Decimal
+2. Octal
+3. Hexadecimal (capitalized)
+4. Binary
 
-Complete the print_formatted function in the editor below.
 
-print_formatted has the following parameters:
+**Function Description** 
 
-* int number: the maximum value to print
 
-#### Prints
+Complete the *print\_formatted* function in the editor below. 
+
+
+*print\_formatted* has the following parameters: 
+
+
+* *int number:* the maximum value to print
+
+
+**Prints** 
+
 
 The four values must be printed on a single line in the order specified above for each i from **1** to **number**. Each value should be space-padded to match the width of the binary value of **number** and the values should be separated by a single space.
 
-#### Input Format
+**Input Format**
 
 A single integer denoting **n**.
 
-#### Sample Input
+**Constraints**
+
+* *[SVG image]*
+**Sample Input**
+
+
 ```
 17
-```
 
-#### Sample Output
+```
+**Sample Output**
+
+
 ```
     1     1     1     1
     2     2     2    10
@@ -46,4 +67,17 @@ A single integer denoting **n**.
    15    17     F  1111
    16    20    10 10000
    17    21    11 10001
+
 ```
+
+## 💡 Hints 
+
+## ➡️ Approach 
+
+## ✅ Detailed Solution
+[View Solution : String Formatting](./string_formatting.py)
+
+| Submissions                                                                                   |                                            Leaderboard                                             |                                                                                   Discussions |                                                                               Editorial |
+| :-------------------------------------------------------------------------------------------- | :------------------------------------------------------------------------------------------------: | --------------------------------------------------------------------------------------------: | --------------------------------------------------------------------------------------: |
+| [📝 My Submission](https://www.hackerrank.com/challenges/python-string-formatting/submissions) | [🏆 Track our position](https://www.hackerrank.com/challenges/python-string-formatting/leaderboard) | [🤔 Help from Community](https://www.hackerrank.com/challenges/python-string-formatting/forum) | [✍️ Editorial](https://www.hackerrank.com/challenges/python-string-formatting/editorial) |
+

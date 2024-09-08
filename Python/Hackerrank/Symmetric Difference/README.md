@@ -1,36 +1,74 @@
-## **[Symmetric Difference](https://www.hackerrank.com/challenges/symmetric-difference)** 
+## [Symmetric Difference](https://www.hackerrank.com/challenges/symmetric-difference)
 
-#### Concept
+![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54) ![HackerRank](https://img.shields.io/badge/-Hackerrank-2EC866?style=for-the-badge&logo=HackerRank&logoColor=white)
 
-If the inputs are given on one line separated by a character (the delimiter), use split() to get the separate values in the form of a list. The delimiter is space (ascii 32) by default. To specify that comma is the delimiter, use string.split(','). For this challenge, and in general on HackerRank, space will be the delimiter.
+| Difficulty | Max Score | Success Ratio |
+| :--------- | :-------: | ------------: |
+| Easy       |    10     |        97.99% |
 
-#### Usage:
+**Objective**   
+
+Today, we're learning about a new data type: *sets*. 
+
+
+**Concept**
+
+
+If the inputs are given on one line separated by a character (the delimiter), use *split()* to get the separate values in the form of a list. The delimiter is space (ascii 32\) by default. To specify that comma is the delimiter, use *string.split(',').* For this challenge, and in general on HackerRank, space will be the delimiter.
+
+
+Usage:
+
+
+
 ```
 >> a = raw_input()
 5 4 3 2
 >> lis = a.split()
 >> print (lis)
 ['5', '4', '3', '2']
-If the list values are all integer types, use the map() method to convert all the strings to integers.
 
+```
+
+If the list values are all integer types, use the *map()* method to convert all the strings to integers.
+
+
+
+```
 >> newlis = list(map(int, lis))
 >> print (newlis)
 [5, 4, 3, 2]
-Sets are an unordered collection of unique values. A single set contains values of any immutable data type.
+
 ```
 
-##### CREATING SETS
+Sets are an unordered collection of unique values. A single set contains values of any immutable data type. 
+  
+  
+
+**CREATING SETS**
+
+
+
 ```
 >> myset = {1, 2} # Directly assigning values to a set
 >> myset = set()  # Initializing a set
 >> myset = set(['a', 'b']) # Creating a set from a list
 >> myset
 {'a', 'b'}
+
 ```
 
-##### MODIFYING SETS
+  
 
-Using the add() function:
+
+
+**MODIFYING SETS** 
+
+
+Using the *add()* function:
+
+
+
 ```
 >> myset.add('c')
 >> myset
@@ -39,9 +77,15 @@ Using the add() function:
 >> myset.add((5, 4))
 >> myset
 {'a', 'c', 'b', (5, 4)}
+
 ```
 
-Using the update() function:
+  
+
+Using the *update()* function:
+
+
+
 ```
 >> myset.update([1, 2, 3, 4]) # update() only works for iterable objects
 >> myset
@@ -52,11 +96,20 @@ Using the update() function:
 >> myset.update({1, 6}, [5, 13])
 >> myset
 {'a', 1, 'c', 'b', 4, 5, 6, 7, 8, 2, (5, 4), 13, 3}
+
 ```
 
-##### REMOVING ITEMS
+  
 
-Both the discard() and remove() functions take a single value as an argument and removes that value from the set. If that value is not present, discard() does nothing, but remove() will raise a KeyError exception.
+**REMOVING ITEMS**
+  
+
+
+
+Both the *discard()* and *remove()* functions take a single value as an argument and removes that value from the set. If that value is not present, *discard()* does nothing, but *remove()* will raise a KeyError exception.
+
+
+
 ```
 >> myset.discard(10)
 >> myset
@@ -64,9 +117,20 @@ Both the discard() and remove() functions take a single value as an argument and
 >> myset.remove(13)
 >> myset
 {'a', 1, 'c', 'b', 4, 5, 7, 8, 2, 12, (5, 4), 11, 3}
+
 ```
 
-##### COMMON SET OPERATIONS Using union(), intersection() and difference() functions.
+  
+
+
+
+**COMMON SET OPERATIONS**
+Using *union()*, *intersection()* and *difference()* functions.
+  
+
+
+
+
 ```
 >> a = {2, 4, 5, 9}
 >> b = {2, 4, 11, 12}
@@ -76,9 +140,17 @@ Both the discard() and remove() functions take a single value as an argument and
 {2, 4}
 >> a.difference(b) # Values which exist in a but not in b
 {9, 5}
+
 ```
 
-The union() and intersection() functions are symmetric methods:
+  
+
+The *union()* and *intersection()* functions are symmetric methods: 
+  
+
+
+
+
 ```
 >> a.union(b) == b.union(a)
 True
@@ -86,22 +158,30 @@ True
 True
 >> a.difference(b) == b.difference(a)
 False
+
 ```
-#### Task
+
+These [other built\-in data structures in Python](http://www.thelearningpoint.net/computer-science/learning-python-programming-and-data-structures/learning-python-programming-and-data-structures--tutorial-4--built-in-data-structures-strings-lists-tuples-dictionaries-mutability) are also useful.
+
+
+**Task**   
+
 Given **2** sets of integers, **M** and **N**, print their symmetric difference in ascending order. The term symmetric difference indicates those values that exist in either **M** or **N** but do not exist in both.
 
-#### Input Format
+**Input Format**
 
 The first line of input contains an integer, **M**.
 The second line contains  **M** space-separated integers.
 The third line contains an integer, **N**.
 The fourth line contains **N** space-separated integers.
 
-#### Output Format
+**Output Format**
 
 Output the symmetric difference integers in ascending order, one per line.
 
-**Sample Input 0**   
+**Sample Input**
+
+
 ```
 STDIN       Function
 -----       --------
@@ -109,12 +189,27 @@ STDIN       Function
 2 4 5 9     a = {2, 4, 5, 9}
 4           set b size N = 4
 2 4 11 12   b = {2, 4, 11, 12}
-```
 
-**Sample Output 0**  
+```
+**Sample Output**
+
+
 ```
 5
 9
 11
 12
+
 ```
+
+## 💡 Hints 
+
+## ➡️ Approach 
+
+## ✅ Detailed Solution
+[View Solution : Symmetric Difference](./symmetric_difference.py)
+
+| Submissions                                                                               |                                          Leaderboard                                           |                                                                               Discussions |                                                                           Editorial |
+| :---------------------------------------------------------------------------------------- | :--------------------------------------------------------------------------------------------: | ----------------------------------------------------------------------------------------: | ----------------------------------------------------------------------------------: |
+| [📝 My Submission](https://www.hackerrank.com/challenges/symmetric-difference/submissions) | [🏆 Track our position](https://www.hackerrank.com/challenges/symmetric-difference/leaderboard) | [🤔 Help from Community](https://www.hackerrank.com/challenges/symmetric-difference/forum) | [✍️ Editorial](https://www.hackerrank.com/challenges/symmetric-difference/editorial) |
+
