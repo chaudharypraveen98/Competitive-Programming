@@ -1,8 +1,21 @@
-## **[Introduction to Sets](https://www.hackerrank.com/challenges/py-introduction-to-sets)** 
-A set is an unordered collection of elements without duplicate entries.
+## [Introduction to Sets](https://www.hackerrank.com/challenges/py-introduction-to-sets)
+
+![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54) ![HackerRank](https://img.shields.io/badge/-Hackerrank-2EC866?style=for-the-badge&logo=HackerRank&logoColor=white)
+
+| Difficulty | Max Score | Success Ratio |
+| :--------- | :-------: | ------------: |
+| Easy       |    10     |        98.42% |
+
+A *set* is an unordered collection of elements without duplicate entries. 
+  
+ 
 When printed, iterated or converted into a sequence, its elements will appear in an arbitrary order.
 
-#### Example
+
+**Example**
+
+
+
 ```
 >>> print set()
 set([])
@@ -24,50 +37,82 @@ set(['Hacker', 'Rank'])
 
 >>> print set(enumerate(['H','a','c','k','e','r','r','a','n','k']))
 set([(6, 'r'), (7, 'a'), (3, 'k'), (4, 'e'), (5, 'r'), (9, 'k'), (2, 'c'), (0, 'H'), (1, 'a'), (8, 'n')])
+
 ```
 
 Basically, sets are used for membership testing and eliminating duplicate entries.
+  
+  
 
-#### Task
+**Task** 
 
-Now, let's use our knowledge of sets and help Mickey.
+
+Now, let's use our knowledge of sets and help Mickey. 
+
 
 Ms. Gabriel Williams is a botany professor at District College. One day, she asked her student Mickey to compute the average of all the plants with distinct heights in her greenhouse.
 
+
+
 Formula used: `Sum of distinct heights / total no of distinct heights`
 
-Function Description
+**Function Description** 
 
-Complete the average function in the editor below.
 
-average has the following parameters:
-* int arr: an array of integers
+Complete the *average* function in the editor below. 
 
-#### Returns
 
-float: the resulting float value rounded to 3 places after the decimal
+*average* has the following parameters: 
 
-#### Input Format
+
+* *int arr:* an array of integers
+
+
+**Returns** 
+
+
+* *float:* the resulting float value rounded to 3 places after the decimal
+**Input Format**
 
 The first line contains the integer,`N` , the size of arr.
 The second line contains the `N` space-separated integers, arr[i].
 
 
-#### Sample Input
+**Constraints**
 
+ *[SVG image]* 
+
+**Sample Input**
+
+
+```
 STDIN                                       Function
 -----                                       --------
 10                                          arr[] size N = 10
 161 182 161 154 176 170 167 171 170 174     arr = [161, 181, ..., 174]
 
-#### Sample Output
+```
+**Sample Output**
 
+
+```
 169.375
 
+```
+**Explanation**
 
-#### Explanation
+Here, *set* *['154', '161', '167', '170', '171', '174', '176', '182']*  is the set containing the distinct heights. Using the *sum()* and *len()* functions, we can compute the average.
 
-Here, `['154', '161', '167', '170', '171', '174', '176', '182']` set is the set containing the distinct heights. Using the sum() and len() functions, we can compute the average.
 
-Average = 1355/8 = 169.375
+ *[SVG image]* 
+## 💡 Hints 
+
+## ➡️ Approach 
+
+## ✅ Detailed Solution
+[View Solution : Introduction to Sets](./introduction_to_sets.py)
+
+| Submissions                                                                                  |                                            Leaderboard                                            |                                                                                  Discussions |                                                                              Editorial |
+| :------------------------------------------------------------------------------------------- | :-----------------------------------------------------------------------------------------------: | -------------------------------------------------------------------------------------------: | -------------------------------------------------------------------------------------: |
+| [📝 My Submission](https://www.hackerrank.com/challenges/py-introduction-to-sets/submissions) | [🏆 Track our position](https://www.hackerrank.com/challenges/py-introduction-to-sets/leaderboard) | [🤔 Help from Community](https://www.hackerrank.com/challenges/py-introduction-to-sets/forum) | [✍️ Editorial](https://www.hackerrank.com/challenges/py-introduction-to-sets/editorial) |
 
