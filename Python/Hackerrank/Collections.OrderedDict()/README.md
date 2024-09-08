@@ -1,5 +1,14 @@
-## **[Collections.OrderedDict()](https://www.hackerrank.com/challenges/py-collections-ordereddict)**
- 
+## [Collections.OrderedDict()](https://www.hackerrank.com/challenges/py-collections-ordereddict)
+
+![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54) ![HackerRank](https://img.shields.io/badge/-Hackerrank-2EC866?style=for-the-badge&logo=HackerRank&logoColor=white)
+
+| Difficulty | Max Score | Success Ratio |
+| :--------- | :-------: | ------------: |
+| Easy       |    20     |        98.27% |
+
+### [collections.OrderedDict](https://docs.python.org/2/library/collections.html#ordereddict-objects)
+
+
 An OrderedDict is a dictionary that remembers the order of the keys that were inserted first. If a new entry overwrites an existing entry, the original insertion position is left unchanged.
 
 #### Example  
@@ -68,3 +77,16 @@ APPLE JUICE: Quantity bought: 2, Price: 10
 Net Price: 20 
 CANDY: Quantity bought: 4, Price: 5 
 Net Price: 20
+
+
+## 💡 Hints 
+
+## ➡️ Approach 
+
+## ✅ Detailed Solution
+[View Solution : Collections.OrderedDict()](./collectionsordereddict.py)
+
+| Submissions                                                                                     |                                             Leaderboard                                              |                                                                                     Discussions |                                                                                 Editorial |
+| :---------------------------------------------------------------------------------------------- | :--------------------------------------------------------------------------------------------------: | ----------------------------------------------------------------------------------------------: | ----------------------------------------------------------------------------------------: |
+| [📝 My Submission](https://www.hackerrank.com/challenges/py-collections-ordereddict/submissions) | [🏆 Track our position](https://www.hackerrank.com/challenges/py-collections-ordereddict/leaderboard) | [🤔 Help from Community](https://www.hackerrank.com/challenges/py-collections-ordereddict/forum) | [✍️ Editorial](https://www.hackerrank.com/challenges/py-collections-ordereddict/editorial) |
+
