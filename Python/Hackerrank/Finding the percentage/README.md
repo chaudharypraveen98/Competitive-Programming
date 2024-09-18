@@ -10,17 +10,15 @@ The provided code stub will read in a dictionary containing key/value pairs of n
 
 
 **Example**   
-
- *[SVG image]*    
-
- *[SVG image]*    
-
- *[SVG image]*    
-
- *[SVG image]*  
+```
+marks key:value pairs are
+'alpha':[20,30,40]
+'beta':[30,50,70]
+query_name = 'beta'
+```
 
 
-The **query\_name** is 'beta'. beta's average score is  *[SVG image]* .
+The **query\_name** is 'beta'. beta's average score is  *query_name* .
 
 **Input Format**
 
@@ -28,9 +26,10 @@ The first line contains the integer `n`, the number of students' records. The ne
 
 **Constraints**
 
-* *[SVG image]*
-* *[SVG image]*
-* *[SVG image]*
+* 2<=n<=10
+* 0<=marks[i]<=100
+* length of marks arrays = 3
+
 **Output Format**
 
 Print one line: The average of the marks obtained by the particular student correct to 2 decimal places.
@@ -57,7 +56,7 @@ Malika
 
 **Explanation 0**
 
-Marks for Malika are  *[SVG image]*  whose average is  *[SVG image]* 
+Marks for Malika are  *{52,56,60}*  whose average is  *52+56+60/3=>56* 
 
 **Sample Input 1**
 
@@ -80,8 +79,10 @@ Harsh
 
 
 ## 💡 Hints 
+use key to query in dict
 
 ## ➡️ Approach 
+Just get the item from the dict and sum and calculate percentage and print.
 
 ## ✅ Detailed Solution
 [View Solution : Finding the percentage](./finding_the_percentage.py)
