@@ -37,8 +37,10 @@ Also, note the single space within each compression and between the compressions
 
 
 ## 💡 Hints 
+Use `i` and `i+1` to check consecutive elements.
 
 ## ➡️ Approach 
+Just use two pointers and count the consecutive occurrence.
 
 ## ✅ Detailed Solution
 [View Solution : Compress the String!](./compress_the_string.py)
