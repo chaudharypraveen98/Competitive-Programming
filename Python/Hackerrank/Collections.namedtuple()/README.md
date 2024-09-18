@@ -63,8 +63,10 @@ Can you solve this challenge in 4 lines of code or less?
 **NOTE**: There is no penalty for solutions that are correct but have more than 4 line
 
 ## 💡 Hints 
+Use proper format to take inputs
 
 ## ➡️ Approach 
+Simply use the namedtuple. `*input().split()` used to unpack values. Round to 2 decimal places using `.2f`.
 
 ## ✅ Detailed Solution
 [View Solution : Collections.namedtuple()](./collectionsnamedtuple.py)
