@@ -12,3 +12,4 @@ Some points to remember
 2. [Optimal Strategy For A Game](./GeeksForGeeks/Optimal%20Strategy%20For%20A%20Game/)
 3. [Replace O's with X's](./GeeksForGeeks/Replace%20O's%20with%20X's/)
 4. [Find all possible palindromic partitions of a String](./Common%20Problems//Combination/Find%20all%20possible%20palindromic%20partitions%20of%20a%20String/)
+5. [1769. Minimum Number of Operations to Move All Balls to Each Box](https://leetcode.com/problems/minimum-number-of-operations-to-move-all-balls-to-each-box/description/)
