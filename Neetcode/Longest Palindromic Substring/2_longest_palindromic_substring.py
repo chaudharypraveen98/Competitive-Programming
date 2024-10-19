@@ -7,6 +7,9 @@ class Solution:
                 i -= 1
                 j += 1
             return s[i+1:j]
+
+        largest = s[0]
+
         for i in range(len(s)-1):
             odd = expand_from_center(i, i)
             even = expand_from_center(i, i+1)
