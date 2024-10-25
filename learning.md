@@ -16,3 +16,4 @@ Some points to remember
 6. [678. Valid Parenthesis String](https://leetcode.com/problems/valid-parenthesis-string/description/)
 7. [20. Valid Parentheses](https://leetcode.com/problems/valid-parentheses/description/)
 8. [409. Longest Palindrome](https://leetcode.com/problems/longest-palindrome/description/)
+9. Fenwick tree [1409. Queries on a Permutation With Key](https://leetcode.com/problems/queries-on-a-permutation-with-key/solutions/575019/python-fenwick-tree-o-n-log-n/)
