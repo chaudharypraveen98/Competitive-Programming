@@ -208,7 +208,6 @@ Please add your name in the list in the following format:
 - SakuraWhisper - [C++ - For Loop](C%2B%2B/Hackerrank/For%20Loop)
 - SakuraWhisper - [C++ - Vector Sort](C%2B%2B/Hackerrank/Vector%20Sort)
 - SakuraWhisper - [C++ - Structs](C%2B%2B/Hackerrank/Structs)
-
-
+- SakuraWhisper - [C++ - Pointer](C%2B%2B/Hackerrank/Pointer)
 
 

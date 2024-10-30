@@ -25,4 +25,5 @@ int main() {
     int b;
     std::cin >> a >> b;
     printNumberDescription(a, b);
+    return 0;
 }
