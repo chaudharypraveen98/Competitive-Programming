@@ -206,6 +206,7 @@ Please add your name in the list in the following format:
 - profumato4 - [C - Variadic functions in C](C/Hackerrank/Variadic%20functions%20in%20C)
 - profuamto4 - [C++ - Say Hello World in C ](C++/Hackerrank/Say%20Hello%20World%20With%20C)
 - SakuraWhisper - [C++ - For Loop](C%2B%2B/Hackerrank/For%20Loop)
+- SakuraWhisper - [C++ - Vector Sort](C%2B%2B/Hackerrank/Vector%20Sort)
 
 
 
