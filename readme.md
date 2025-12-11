@@ -209,5 +209,6 @@ Please add your name in the list in the following format:
 - SakuraWhisper - [C++ - Vector Sort](C%2B%2B/Hackerrank/Vector%20Sort)
 - SakuraWhisper - [C++ - Structs](C%2B%2B/Hackerrank/Structs)
 - SakuraWhisper - [C++ - Pointer](C%2B%2B/Hackerrank/Pointer)
+- [L9Lenny](https://github.com/L9Lenny) - [Python - Write A Function](Python/Hackerrank/Write%20a%20function/solution.py)
 
 
