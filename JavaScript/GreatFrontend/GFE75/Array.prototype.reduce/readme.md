@@ -1,0 +1,1 @@
+## [Array.prototype.reduce](https://www.greatfrontend.com/interviews/study/gfe75/questions/javascript/array-reduce)
