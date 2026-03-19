@@ -1,0 +1,9 @@
+body {
+  font-family: sans-serif;
+}
+.tab-active {
+  background-color: beige;
+}
+.tab {
+  margin-right: 10px;
+}
