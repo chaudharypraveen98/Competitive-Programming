@@ -1,0 +1,1 @@
+## [Accordion](https://www.greatfrontend.com/interviews/study/gfe75/questions/user-interface/accordion)
