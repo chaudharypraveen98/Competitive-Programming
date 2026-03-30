@@ -1,5 +1,6 @@
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import "./solutions.css";
+import { fetchWithTimeout } from "./helper";
 
 export const AutoComplete = () => {
   const [searchText, setSearchText] = useState("");
@@ -11,7 +12,7 @@ export const AutoComplete = () => {
 
   const fetchData = async (word) => {
     try {
-      const tempResult = await fetch(
+      const tempResult = await fetchWithTimeout(
         `https://api.datamuse.com/words?sp=${word}`,
       ).then((res) => res.json());
       if (tempResult) {
@@ -26,6 +27,7 @@ export const AutoComplete = () => {
   };
 
   const getData = async (characters) => {
+    if (characters.length < 3) return; 
     if (cache.current[characters]) {
       console.log("find in cache", cache.current[characters]);
       return cache.current[characters];
