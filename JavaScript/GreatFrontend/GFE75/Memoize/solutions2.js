@@ -22,14 +22,15 @@ export default function memoize(func, resolver) {
 
       curr = container.get(arg)
     }
-    if(Object.hasOwn(curr, RESULT_KEY)){
-        return curr.get(RESULT_KEY)
+    // leaf node
+    if( RESULT_KEY in curr){
+        return curr[RESULT_KEY]
     }
     const res = func.apply(this, args)
-    curr.set(RESULT_KEY, res)
+    curr[RESULT_KEY]= res
     return res
   };
 
-  memoizedFunc.cache = cache;
+  memoizedFunc.cache = root;
   return memoizedFunc;
 }
