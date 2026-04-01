@@ -1,5 +1,4 @@
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
-import "./solutions.css";
 import { fetchWithTimeout } from "./helper";
 
 export const AutoComplete = () => {
@@ -27,7 +26,7 @@ export const AutoComplete = () => {
   };
 
   const getData = async (characters) => {
-    if (characters.length < 3) return; 
+    if (characters.length < 3) return;
     if (cache.current[characters]) {
       console.log("find in cache", cache.current[characters]);
       return cache.current[characters];
@@ -93,12 +92,16 @@ export const AutoComplete = () => {
     setShouldSearch(false);
     setSearchResults([]);
   };
-  console.log("selected index", selectedTextIndex);
 
   return (
-    <div className="main-container">
-      <div className="searchInputContainer">
-        <label htmlFor="auto-complete">Search Anything !!</label>
+    <div className="relative">
+      <div className="mb-4">
+        <label
+          htmlFor="auto-complete"
+          className="block text-sm font-medium mb-2 text-slate-200"
+        >
+          Search Anything !!
+        </label>
         <input
           type="text"
           id="auto-complete"
@@ -107,38 +110,49 @@ export const AutoComplete = () => {
           onChange={(e) => setSearchText(e.target.value)}
           role="searchbox"
           aria-autocomplete="list"
-          className="inputBox"
+          className="w-full p-2 rounded border border-slate-700 bg-slate-800 text-slate-100 placeholder:text-slate-500 focus:border-indigo-400 focus:ring-indigo-500 focus:ring-1"
           aria-expanded={searchResults?.length > 0}
           aria-controls="result-listbox"
           onKeyDown={handleKeyDown}
         />
       </div>
       {searchResults?.length > 0 ? (
-        <div className="resultContainer" id="result-listbox" role="listbox">
+        <div
+          className="absolute top-16 max-h-48 overflow-y-auto rounded w-full bg-slate-900 border border-slate-700 shadow-lg z-10"
+          id="result-listbox"
+          role="listbox"
+        >
           {searchResults.map((result, index) => {
+            const isActive = selectedTextIndex === index;
             return (
               <div
                 key={result?.word}
-                className={`resultItem ${selectedTextIndex === index ? "resultItem--selected" : ""}`}
+                className={`border-b border-slate-700 cursor-pointer p-2 ${isActive ? "bg-slate-700 text-white" : "bg-slate-800 text-slate-200 hover:bg-slate-700"}`}
                 role="option"
-                aria-selected={selectedTextIndex === index}
+                aria-selected={isActive}
                 onClick={() => {
                   handleSelect(result?.word);
                 }}
               >
-                <div className="resultTitle">{result?.word}</div>
+                <div className="text-sm font-bold text-left">
+                  {result?.word}
+                </div>
               </div>
             );
           })}
         </div>
       ) : searchText && !isSelected ? (
-        <div className="resultContainer">
-          <h4>No Results Found</h4>
+        <div className="mt-4 p-4 rounded border border-slate-700 bg-slate-900 text-slate-100">
+          <h4 className="text-lg font-semibold">No Results Found</h4>
         </div>
       ) : isSelected ? (
-        <h4>Content loading...</h4>
+        <h4 className="mt-4 text-lg font-semibold text-slate-200">
+          Content loaded - Search Successfull
+        </h4>
       ) : (
-        <h5>Write something to start</h5>
+        <h5 className="mt-4 text-sm text-slate-500">
+          Write something to start
+        </h5>
       )}
     </div>
   );
