@@ -1,0 +1,64 @@
+/* Traffic Light Component - Plain CSS (No Tailwind) */
+
+/* Container for centering the traffic light */
+.traffic-light-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+/* Main traffic light housing */
+.traffic-light {
+  display: flex;
+  flex-direction: column;
+  width: 216px; /* w-54 equivalent (54 * 4px = 216px) */
+  height: 548px; /* h-137 equivalent (137 * 4px = 548px) */
+  justify-content: space-between;
+  padding: 16px; /* p-4 equivalent */
+  border: 1px solid #334155; /* border-border-card equivalent */
+  border-radius: 8px; /* rounded-lg equivalent */
+  background-color: #1e293b; /* bg-bg-card equivalent */
+}
+
+/* Individual light circles */
+.light {
+  height: 100%;
+  width: 100%;
+  flex: 1;
+  border-radius: 50%; /* rounded-full equivalent */
+  margin: 4px 0; /* Small gap between lights */
+}
+
+/* Light colors */
+.light.red.active {
+  background-color: #ef4444; /* bg-red-500 equivalent */
+}
+
+.light.yellow.active {
+  background-color: #fbbf24; /* bg-yellow-400 equivalent */
+}
+
+.light.green.active {
+  background-color: #22c55e; /* bg-green-500 equivalent */
+}
+
+/* Inactive state for all lights */
+.light.inactive {
+  background-color: #4b5563; /* bg-slate-600 equivalent */
+}
+
+/* Optional: Add a subtle glow effect for active lights */
+.light.active {
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 640px) {
+  .traffic-light {
+    width: 180px;
+    height: 450px;
+    padding: 12px;
+  }
+}

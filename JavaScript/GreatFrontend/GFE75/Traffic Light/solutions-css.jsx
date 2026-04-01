@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import "./traffic-light.css";
 
 const colorTimeouts = {
   red: 4000,
@@ -36,16 +37,16 @@ export default function TrafficLight() {
   console.log("active", active);
 
   return (
-    <div className="flex flex-row justify-center items-center">
-      <div className="flex flex-col w-54 h-137 justify-between p-4 border border-border-card rounded-lg bg-bg-card">
+    <div className="traffic-light-container">
+      <div className="traffic-light">
         <div
-          className={`h-full w-full flex-1 rounded-full ${active === "red" ? "bg-red-500" : "bg-slate-600"}`}
+          className={`light red ${active === "red" ? "active" : "inactive"}`}
         ></div>
         <div
-          className={`h-full w-full flex-1 rounded-full ${active === "yellow-down" || active === "yellow-up" ? "bg-yellow-400" : "bg-slate-600"}`}
+          className={`light yellow ${active === "yellow-down" || active === "yellow-up" ? "active" : "inactive"}`}
         ></div>
         <div
-          className={`h-full w-full flex-1 rounded-full ${active === "green" ? "bg-green-500" : "bg-slate-600"}`}
+          className={`light green ${active === "green" ? "active" : "inactive"}`}
         ></div>
       </div>
     </div>
