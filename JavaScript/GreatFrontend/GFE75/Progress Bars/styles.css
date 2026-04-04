@@ -1,0 +1,10 @@
+.bar-container {
+  width: 200px;
+  height: 20px;
+  background: #eee;
+  margin: 10px 0;
+}
+.bar {
+  height: 100%;
+  background: green;
+}
