@@ -1,0 +1,5 @@
+## [Is there any reason you'd want to use `translate()` instead of `absolute` positioning, or vice-versa? And why?](https://www.greatfrontend.com/interviews/study/gfe75/questions/quiz/is-there-any-reason-youd-want-to-use-translate-instead-of-absolute-positioning-or-vice-versa-and-why)
+
+**translate()** is a possible value of the CSS transform property. When using **translate()**, the element still occupies its original space (sort of like position: relative). But when changing the absolute positioning of elements, the elements are removed from the flow of the page and the positioning of the surrounding elements will be affected. Hence the page layout will have to be recalculated.
+
+Changing transform or opacity does not trigger browser reflows or repaints but does trigger compositions; On the other hand, changing the absolute positioning triggers reflow. transform causes the browser to create a GPU layer for the element but changing absolute positioning properties uses the CPU. Hence **translate()** is more efficient and will result in shorter paint times for smoother animations.
