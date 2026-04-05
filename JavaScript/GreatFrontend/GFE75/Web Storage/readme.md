@@ -1,0 +1,1 @@
+## [Describe the difference between a cookie, `sessionStorage` and `localStorage` in browsers](https://www.greatfrontend.com/interviews/study/gfe75/questions/quiz/describe-the-difference-between-a-cookie-sessionstorage-and-localstorage)
