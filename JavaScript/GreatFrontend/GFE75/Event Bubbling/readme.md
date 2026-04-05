@@ -1,0 +1,1 @@
+## [Describe event bubbling in JavaScript and browsers](https://www.greatfrontend.com/interviews/study/gfe75/questions/quiz/describe-event-bubbling)
