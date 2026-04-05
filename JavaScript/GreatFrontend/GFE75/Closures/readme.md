@@ -1,0 +1,1 @@
+## [What is a closure in JavaScript, and how/why would you use one?](https://www.greatfrontend.com/interviews/study/gfe75/questions/quiz/what-is-a-closure-and-how-why-would-you-use-one)
