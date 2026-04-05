@@ -1,0 +1,1 @@
+## [Promises instead of callbacks in JavaScript](https://www.greatfrontend.com/interviews/study/gfe75/questions/quiz/what-are-the-pros-and-cons-of-using-promises-instead-of-callbacks)
