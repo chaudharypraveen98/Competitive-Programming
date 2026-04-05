@@ -1,0 +1,1 @@
+## [Explain event delegation in JavaScript](https://www.greatfrontend.com/interviews/study/gfe75/questions/quiz/explain-event-delegation)
