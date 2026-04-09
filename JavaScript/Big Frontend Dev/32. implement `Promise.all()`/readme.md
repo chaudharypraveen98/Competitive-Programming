@@ -1,0 +1,1 @@
+## [32. implement `Promise.all()`](https://bigfrontend.dev/problem/implement-Promise-all)
