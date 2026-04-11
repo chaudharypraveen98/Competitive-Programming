@@ -1,0 +1,27 @@
+
+.btn-container {
+  cursor: pointer;
+  padding: 4px 8px;
+  border-radius: 16px;
+  display: flex;
+  gap: 4px;
+  align-items: center;
+  background: transparent;
+  width: 80px;
+  justify-content: center;
+  border: 2px solid transparent;
+}
+.btn-container.default-state:hover:not(:disabled) {
+  border: 2px solid #f00;
+  color: #f00;
+}
+.default-state {
+  border: 2px solid #888;
+  color: #888;
+}
+
+.filled-state {
+  border: 2px solid #f00;
+  background-color: #f00;
+  color: white;
+}
