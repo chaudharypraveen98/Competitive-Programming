@@ -5,6 +5,7 @@ import { applyDarkTheme } from "./theme";
 import ProgressBar from "../JavaScript/GreatFrontend/GFE75/Progress Bars/ProgressBar";
 import Star from "../JavaScript/GreatFrontend/GFE75/StarRating";
 import StarRating from "../JavaScript/GreatFrontend/GFE75/StarRating";
+import LikeButton from "../JavaScript/GreatFrontend/GFE75/LikeButton";
 
 function App() {
   useEffect(() => {
@@ -41,6 +42,12 @@ function App() {
                   <div className="rounded-xl border border-slate-700 bg-slate-900 p-4">
                       <h2 className="mb-3 text-xl font-semibold">Star Demo</h2>
                       <StarRating />
+                  </div>
+                  <div className="rounded-xl border border-slate-700 bg-slate-900 p-4">
+                      <h2 className="mb-3 text-xl font-semibold">
+                          Like Button
+                      </h2>
+                      <LikeButton />
                   </div>
               </section>
           </main>
