@@ -7,6 +7,7 @@ import Star from "../JavaScript/GreatFrontend/GFE75/StarRating";
 import StarRating from "../JavaScript/GreatFrontend/GFE75/StarRating";
 import LikeButton from "../JavaScript/GreatFrontend/GFE75/LikeButton";
 import Modal from "../JavaScript/GreatFrontend/GFE75/ModalDialog";
+import DataTable from "../JavaScript/GreatFrontend/GFE75/DataTable";
 
 function App() {
   useEffect(() => {
@@ -53,6 +54,10 @@ function App() {
                   <div className="rounded-xl border border-slate-700 bg-slate-900 p-4">
                       <h2 className="mb-3 text-xl font-semibold">Modal</h2>
                       <Modal />
+                  </div>
+                  <div className="rounded-xl border border-slate-700 bg-slate-900 p-4">
+                      <h2 className="mb-3 text-xl font-semibold">Data Table</h2>
+                      <DataTable />
                   </div>
               </section>
           </main>
