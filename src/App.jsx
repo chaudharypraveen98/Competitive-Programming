@@ -6,6 +6,7 @@ import ProgressBar from "../JavaScript/GreatFrontend/GFE75/Progress Bars/Progres
 import Star from "../JavaScript/GreatFrontend/GFE75/StarRating";
 import StarRating from "../JavaScript/GreatFrontend/GFE75/StarRating";
 import LikeButton from "../JavaScript/GreatFrontend/GFE75/LikeButton";
+import Modal from "../JavaScript/GreatFrontend/GFE75/ModalDialog";
 
 function App() {
   useEffect(() => {
@@ -48,6 +49,10 @@ function App() {
                           Like Button
                       </h2>
                       <LikeButton />
+                  </div>
+                  <div className="rounded-xl border border-slate-700 bg-slate-900 p-4">
+                      <h2 className="mb-3 text-xl font-semibold">Modal</h2>
+                      <Modal />
                   </div>
               </section>
           </main>

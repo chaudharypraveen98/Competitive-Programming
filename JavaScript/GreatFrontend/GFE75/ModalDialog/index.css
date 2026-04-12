@@ -1,0 +1,24 @@
+.modal-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 2;
+}
+.modal-body {
+  max-width: 80%;
+  border-color: 1px solid grey;
+  background: white;
+  border-radius: 16px;
+  padding: 20px;
+}
+.close-button {
+  width: 100%;
+  text-align: center;
+  margin-top: 20px;
+}
