@@ -1,0 +1,1 @@
+## [Squash Object](https://www.greatfrontend.com/interviews/study/gfe75/questions/javascript/squash-object)
