@@ -1,5 +1,5 @@
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
-import { fetchWithTimeout } from "./helper";
+import { fetchWithTimeoutAndRetry } from "./helper";
 
 export const AutoComplete = () => {
   const [searchText, setSearchText] = useState("");
@@ -11,8 +11,8 @@ export const AutoComplete = () => {
 
   const fetchData = async (word) => {
     try {
-      const tempResult = await fetchWithTimeout(
-        `https://api.datamuse.com/words?sp=${word}`,
+      const tempResult = await fetchWithTimeoutAndRetry(
+          `https://api.datamuse.com/words?sp=${word}`,
       ).then((res) => res.json());
       if (tempResult) {
         return tempResult;
