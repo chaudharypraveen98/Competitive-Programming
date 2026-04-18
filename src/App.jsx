@@ -8,6 +8,7 @@ import StarRating from "../JavaScript/GreatFrontend/GFE75/StarRating";
 import LikeButton from "../JavaScript/GreatFrontend/GFE75/LikeButton";
 import Modal from "../JavaScript/GreatFrontend/GFE75/ModalDialog";
 import DataTable from "../JavaScript/GreatFrontend/GFE75/DataTable";
+import Checkboxes from "../JavaScript/GreatFrontend/GFE75/NestedCheckboxes";
 
 function App() {
   useEffect(() => {
@@ -25,18 +26,22 @@ function App() {
 
               <section className="grid gap-6">
                   <div className="rounded-xl border border-slate-700 bg-slate-900 p-4">
+                      <h2 className="mb-3 text-xl font-semibold">Checkboxex</h2>
+                      <Checkboxes />
+                  </div>
+                  <div className="rounded-xl border border-slate-700 bg-slate-900 p-4">
                       <h2 className="mb-3 text-xl font-semibold">
                           Autocomplete Demo
                       </h2>
                       <AutoComplete />
                   </div>
-
+                  {/* 
                   <div className="rounded-xl border border-slate-700 bg-slate-900 p-4">
                       <h2 className="mb-3 text-xl font-semibold">
                           Traffic Light Demo
                       </h2>
                       <TrafficLight />
-                  </div>
+                  </div> */}
 
                   <div className="rounded-xl border border-slate-700 bg-slate-900 p-4">
                       <h2 className="mb-3 text-xl font-semibold">

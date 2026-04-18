@@ -33,8 +33,6 @@ export default function TrafficLight() {
     };
   }, [active]);
 
-  console.log("active", active);
-
   return (
     <div className="flex flex-row justify-center items-center">
       <div className="flex flex-col w-54 h-137 justify-between p-4 border border-border-card rounded-lg bg-bg-card">

@@ -34,8 +34,6 @@ export default function TrafficLight() {
     };
   }, [active]);
 
-  console.log("active", active);
-
   return (
     <div className="traffic-light-container">
       <div className="traffic-light">
