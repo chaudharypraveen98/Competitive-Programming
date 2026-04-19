@@ -1,0 +1,13 @@
+.stopwatch__btn{
+    background-color: var(--color-text-primary);
+    color: black;
+    padding: 4px 8px;
+    border-radius: 24px;
+    cursor: pointer;
+}
+.stopwatch__container{
+    display: flex;
+    flex-direction: row;
+    gap:8px;
+    align-items: center;
+}
