@@ -1,0 +1,13 @@
+.fileItem__children{
+    margin-left: 10px;
+}
+.fileItem__title{
+    display: flex;
+    flex-direction: row;
+    gap: 4px;
+}
+.fileItem__status{
+    cursor: pointer;
+    user-select: none; /* Prevents highlighting the [+] or [-] */
+    min-width: 20px;
+}
