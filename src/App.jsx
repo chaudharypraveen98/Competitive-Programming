@@ -12,6 +12,7 @@ import Checkboxes from "../JavaScript/GreatFrontend/GFE75/NestedCheckboxes";
 import Stopwatch from "../JavaScript/GreatFrontend/GFE75/Stopwatch";
 import DigitalClock from "../JavaScript/GreatFrontend/GFE75/DigitalClock";
 import FileExplorer from "../JavaScript/GreatFrontend/GFE75/FileExplorer";
+import TransferList from "../JavaScript/GreatFrontend/GFE75/TransferList";
 
 function App() {
   useEffect(() => {
@@ -28,6 +29,12 @@ function App() {
               </header>
 
               <section className="grid gap-6">
+                  <div className="rounded-xl border border-slate-700 bg-slate-900 p-4">
+                      <h2 className="mb-3 text-xl font-semibold">
+                          Transfer List
+                      </h2>
+                      <TransferList />
+                  </div>
                   <div className="rounded-xl border border-slate-700 bg-slate-900 p-4">
                       <h2 className="mb-3 text-xl font-semibold">
                           File Explorer
