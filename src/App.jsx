@@ -10,6 +10,7 @@ import Modal from "../JavaScript/GreatFrontend/GFE75/ModalDialog";
 import DataTable from "../JavaScript/GreatFrontend/GFE75/DataTable";
 import Checkboxes from "../JavaScript/GreatFrontend/GFE75/NestedCheckboxes";
 import Stopwatch from "../JavaScript/GreatFrontend/GFE75/Stopwatch";
+import DigitalClock from "../JavaScript/GreatFrontend/GFE75/DigitalClock";
 
 function App() {
   useEffect(() => {
@@ -26,6 +27,12 @@ function App() {
               </header>
 
               <section className="grid gap-6">
+                  <div className="rounded-xl border border-slate-700 bg-slate-900 p-4">
+                      <h2 className="mb-3 text-xl font-semibold">
+                          Digital Clock
+                      </h2>
+                      <DigitalClock />
+                  </div>
                   <div className="rounded-xl border border-slate-700 bg-slate-900 p-4">
                       <h2 className="mb-3 text-xl font-semibold">Stop Watch</h2>
                       <Stopwatch />
