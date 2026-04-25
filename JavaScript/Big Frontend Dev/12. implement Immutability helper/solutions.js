@@ -1,29 +1,28 @@
 function update(data, command) {
     function process(state, command) {
-        if (command.hasOwnProperty("$push")) {
-            return [...state].concat(command.$push);
-        }
-        if (command.hasOwnProperty("$set")) {
-            return command.$set;
-        }
-        if (command.hasOwnProperty("$apply")){
-            return command.$apply(state);
-        }
-        if (command.hasOwnProperty("$merge")){
-            if (typeof state !== "object") {
-                throw new Error("can't merge");
+        if (command && typeof command === "object") {
+            if (command.hasOwnProperty("$push")) {
+                return [...state].concat(command.$push);
             }
-            return { ...state, ...command.$merge };
+            if (command.hasOwnProperty("$set")) {
+                return command.$set;
+            }
+            if (command.hasOwnProperty("$apply")) {
+                return command.$apply(state);
+            }
+            if (command.hasOwnProperty("$merge")) {
+                if (typeof state !== "object") {
+                    throw new Error("can't merge");
+                }
+                return { ...state, ...command.$merge };
+            }
         }
         // 2. TRAVERSAL PHASE
         // If it's not a '$' command, we are traversing deeper.
         const isArray = Array.isArray(state);
         const newObj = isArray ? [...state] : { ...state };
         for (const key of Object.keys(command)) {
-            newObj[key] = process(
-                newObj[key],
-                command[key],
-            );
+            newObj[key] = process(newObj[key], command[key]);
         }
         return newObj;
     }
