@@ -11,7 +11,8 @@ const promise = new Promise((resolve) => {
 console.log(4)
 
 promise.then(() => {
-  console.log(5)
+    // promises are micro task will be picked before
+    console.log(5);
 }).then(() => {
   console.log(6)
 })
