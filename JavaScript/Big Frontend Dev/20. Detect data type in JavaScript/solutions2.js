@@ -5,5 +5,6 @@
  */
 function detectType(data) {
   if(data instanceof FileReader) return 'object';
-  return Object.prototype.toString.call(data).slice(1, -1).split(' ')[1].toLowerCase();
+  const type = Object.prototype.toString.call(data);
+  return type.slice(8, -1).toLowerCase();
 }

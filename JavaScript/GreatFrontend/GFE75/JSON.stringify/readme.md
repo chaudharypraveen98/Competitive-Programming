@@ -5,3 +5,4 @@
 2. handle null cases correctly
 3. use `String` to safely convert
 4. `[key,value] of Object.entries(node)` access both key and value together
+5. Better Approach - [Link](JavaScript/Big Frontend Dev/21. implement JSON.stringify())
