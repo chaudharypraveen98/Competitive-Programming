@@ -1,5 +1,4 @@
-
-
+## [6. Arrow Function](https://bigfrontend.dev/quiz/6-Arrow-Function)
 
 ### Arrow functions do not have their own this:
 This also means that we cannot bind the this context or call a arrow function with some "this" context. The this inside arrow function is from the lexical scope. In simple terms, the "this" will be taken from the surrouding scope where the arrow function was written.
