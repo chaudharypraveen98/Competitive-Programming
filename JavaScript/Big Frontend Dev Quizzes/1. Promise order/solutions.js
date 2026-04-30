@@ -2,20 +2,20 @@
 
 console.log(1)
 const promise = new Promise((resolve) => {
-  // sync task inside declaration will print
-  console.log(2)
-  resolve()
-  console.log(3)
-})
+    console.log(2);
+    resolve();
+    console.log(3);
+});
 
 console.log(4)
 
-promise.then(() => {
-    // promises are micro task will be picked before
-    console.log(5);
-}).then(() => {
-  console.log(6)
-})
+promise
+    .then(() => {
+        console.log(5);
+    })
+    .then(() => {
+        console.log(6);
+    });
 
 console.log(7)
 
