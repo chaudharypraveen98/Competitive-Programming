@@ -18,8 +18,8 @@ Promise.resolve(1)
 }).catch((val) => {
   console.log(val)
 }).finally((val) => {
-  console.log(val)
-  return 10
+    console.log(val); // return previous next value to handler
+    return 10;
 }).then((val) => {
   console.log(val)
 })
@@ -35,12 +35,6 @@ Promise.resolve(1)
  * 7. Log undefined: The .catch() resolves successfully, passing undefined forward.
  * 8. Log undefined: The .finally() executes, ignoring its return value (10) 
  * and passing through the previous undefined to the final .then().
- * * KEY TAKEAWAYS:
- * - .catch() swallows errors and returns a resolved promise (undefined) by default.
- * - .finally() is transparent; it ignores return values and passes the previous 
- * fulfillment value through to the next handler.
- * - Nested Promises are awaited; the parent .then() will not resolve until the 
- * returned inner Promise settles.
  */
 
 // 1
