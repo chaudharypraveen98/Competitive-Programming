@@ -84,48 +84,46 @@ If the first feed request is initiated on the client in a CSR flow, the app can 
 2. Request Coalescing (Deduplication)
     1. This prevents "Self-inflicted DDoS" where multiple parts of your UI accidentally fire identical requests.
     2. Example: Imagine your News Feed has a "Post Detail" sidebar and a "Main Feed." Both components need data for Post_ABC at the same time.
-    3.
-      ```
-      function createCoalescedFetch() {
-        // Persistent Cache to track active, in-flight promises [cite: 813]
-        const inFlightRequests = new Map();
+    3. ```
+       function createCoalescedFetch() {
+         // Persistent Cache to track active, in-flight promises [cite: 813]
+         const inFlightRequests = new Map();
 
-        return async function (url, options = {}) {
-          // 1. The Check: Does this specific request already exist in the map? [cite: 814]
-          if (inFlightRequests.has(url)) {
-            console.log(`Coalescing: Returning existing promise for ${url}`);
-            // 2. The Coalesce: Return the stored promise so callers share the same trigger [cite: 806, 815]
-            return inFlightRequests.get(url);
-          }
+         return async function (url, options = {}) {
+           // 1. The Check: Does this specific request already exist in the map? [cite: 814]
+           if (inFlightRequests.has(url)) {
+             console.log(`Coalescing: Returning existing promise for ${url}`);
+             // 2. The Coalesce: Return the stored promise so callers share the same trigger [cite: 806, 815]
+             return inFlightRequests.get(url);
+           }
 
-          // 3. The New Request: Create the promise and store it in the map [cite: 813]
-          const fetchPromise = fetch(url, options)
-            .then((res) => res.json())
-            .finally(() => {
-              // 4. The Cleanup: Remove from map once settled to allow fresh data later [cite: 816]
-              inFlightRequests.delete(url);
-            });
+           // 3. The New Request: Create the promise and store it in the map [cite: 813]
+           const fetchPromise = fetch(url, options)
+             .then((res) => res.json())
+             .finally(() => {
+               // 4. The Cleanup: Remove from map once settled to allow fresh data later [cite: 816]
+               inFlightRequests.delete(url);
+             });
 
-          inFlightRequests.set(url, fetchPromise);
-          return fetchPromise;
-        };
-      }
+           inFlightRequests.set(url, fetchPromise);
+           return fetchPromise;
+         };
+       }
 
-      // Usage Example
-      const coalescedFetch = createCoalescedFetch();
+       // Usage Example
+       const coalescedFetch = createCoalescedFetch();
 
-      // Firing three identical requests simultaneously [cite: 700, 713, 811]
-      coalescedFetch('/api/news-feed');
-      coalescedFetch('/api/news-feed');
-      coalescedFetch('/api/news-feed');
-      // Result: Only ONE network request is actually triggered.
-      ```
-
+       // Firing three identical requests simultaneously [cite: 700, 713, 811]
+       coalescedFetch('/api/news-feed');
+       coalescedFetch('/api/news-feed');
+       coalescedFetch('/api/news-feed');
+       // Result: Only ONE network request is actually triggered.
+       ```
 
 3. **AbortController**: When a user navigates away or triggers rapid-fire actions (like repeated clicks on a reaction button), the layer uses AbortController to cancel superseded or obsolete requests.
-4. **Idempotency for Robust Writes** : Idempotency ensures that retrying a write operation (like liking a post or submitting a comment) doesn't result in duplicate data on the server. 
-   1. The client generates a unique key (such as a UUID) at the moment of user submission. This key is attached to the request via a header or the request body.
-   2. Stable Retries: If a network error occurs, the client (or a service worker) can retry the request using the same key. The server recognizes the duplicate key and returns the original successful result instead of creating a second "like" or post.
+4. **Idempotency for Robust Writes** : Idempotency ensures that retrying a write operation (like liking a post or submitting a comment) doesn't result in duplicate data on the server.
+    1. The client generates a unique key (such as a UUID) at the moment of user submission. This key is attached to the request via a header or the request body.
+    2. Stable Retries: If a network error occurs, the client (or a service worker) can retry the request using the same key. The server recognizes the duplicate key and returns the original successful result instead of creating a second "like" or post.
 
 ### API endpoints
 
@@ -135,7 +133,6 @@ If the first feed request is initiated on the client in a CSR flow, the app can 
 | PUT /posts/{postId}/reaction    | Set or change the viewer's reaction.           |
 | DELETE /posts/{postId}/reaction | Remove the viewer's reaction.                  |
 
-
 This HTTP method is for users to create a new post, which will be shown in their own feed as well as the feeds of others they are friends with.
 
 | Field       | Value                            |
@@ -144,7 +141,6 @@ This HTTP method is for users to create a new post, which will be shown in their
 | Path        | /posts                           |
 | Description | Creates a new post.              |
 | Parameters  | { body: '...', mediaIds: [...] } |
-
 
 **Upload media binaries first**, then create the post by mediaId
 For posts with attachments, upload the binary first, get a mediaId back, then include that ID when creating the post. In production, the upload step often involves getting a presigned URL so the client uploads directly to blob storage, keeping large uploads off the application server and letting post creation stay a small JSON request.
@@ -182,6 +178,101 @@ The response format can be just the single post and the client can write it stra
 
 ```
 
-
 ![Post creation flow](image.png)
 Post creation flow with media upload and optimistic UI
+
+### Optimizations and deep dive
+
+1. **Feed list**
+    1. **Virtualized lists** : With infinite scrolling, the feed lives in one long-lived scroll container. As the user scrolls further down, more posts are appended to the DOM, and with feed posts having complex DOM structure (lots of details to render), the DOM size rapidly increases. <br> <br> A virtualized list renders only the posts in the viewport plus a small overscan window. In practice, Facebook replaces the contents of off-screen feed posts with spacer <div>s whose inline height (e.g. style="height: 300px") matches the measured height of the real content, so scroll position is preserved while the heavy subtree is removed from the DOM. This improves rendering performance in terms of:
+    1. **Browser painting**: Fewer DOM nodes to render and fewer layout computations to be made.
+    1. **Virtual DOM reconciliation** : In frameworks that use a virtual DOM (e.g. React, which Facebook uses to render the feed), a simpler empty subtree makes diffing against the previous tree cheaper and produces a smaller set of real DOM mutations.
+        1. Stable Keys: Each virtualized item must have a unique, permanent identifier (like a postId) to help React's reconciliation engine track it even as it moves in and out of the DOM.
+        2. Measurement Cache: The system maintains an internal dictionary that stores the measured height of every rendered item.
+           Example: If "Post A" is measured at 450px, that value is cached. When the user scrolls away and then back, the virtualizer uses that 450px to instantly set a spacer element, preventing the "jumpy" scroll behavior known as Layout Shift.
+        3. Handling Async Media: Since images and videos load asynchronously, their initial height might be 0px, expanding only after the asset arrives.
+
+    ```
+    import React, { useRef, useEffect } from 'react';
+
+     /**
+     * A "Smart" Feed Item that reports its own height changes.
+     * This handles async images, text wrapping, and window resizing.
+     */
+     const VirtualizedFeedItem = ({ postId, children, onHeightChange }) => {
+       const containerRef = useRef(null);
+
+       useEffect(() => {
+         if (!containerRef.current) return;
+
+         // 1. Initialize ResizeObserver to watch for DOM size changes
+         const resizeObserver = new ResizeObserver((entries) => {
+           for (const entry of entries) {
+             // 2. Get the actual observed height
+             const newHeight = entry.contentRect.height;
+
+             // 3. Trigger the cache update in the parent Virtualizer
+             onHeightChange(postId, newHeight);
+           }
+         });
+
+         // 4. Start observing the container
+         resizeObserver.observe(containerRef.current);
+
+         // 5. Cleanup to prevent memory leaks
+         return () => resizeObserver.disconnect();
+       }, [postId, onHeightChange]);
+
+       return (
+         <div
+           ref={containerRef}
+           className="feed-item-container"
+           style={{ overflow: 'hidden' }} // Prevents margin collapse issues in measurement
+         >
+           {children}
+         </div>
+       );
+     };
+
+     export default VirtualizedFeedItem;
+    ```
+
+    2.**Infinite scrolling** :There are two popular ways to implement infinite scroll. Both involve rendering a marker element at the bottom of the feed:
+    1. Listen for the scroll event: Add a scroll event listener (ideally throttled) to the page or a timer (via setInterval) that checks whether the position of the marker element is within a certain threshold from the bottom of the page. The position of the marker element can be obtained using Element.getBoundingClientRect.
+    2. Intersection Observer API: Use the Intersection Observer API to monitor when the marker element is entering or exiting another element or intersecting by a specified amount.
+       The Intersection Observer API is a native browser API and is preferred over Element.getBoundingClientRect().
+
+2. **Loading indicators** : A lightweight shimmer loading effect can be layered on top, but the important part is reserving the expected layout so the real content can swap in with minimal visual jump.
+
+3. **Preserving scroll position on remounting** : Feed scroll positions should be preserved if users navigate to another page and back to the feed. This can be achieved in single-page applications if the feed list data is cached within the client store along with the scroll position. When the user goes back to the feed page, since the data is already on the client, the feed list can be read from the client store and immediately presented on the screen with the previous scroll position; no server round-trip is needed.
+
+4. **Stale feeds** : Avoid silently prepending new posts while the user is reading. A banner such as "New posts available" is usually safer because it preserves reading position and lets the user choose when to merge newer content.
+i. **Server-Driven Invalidation: Beyond Timers**
+While standard caching relies on "Time-based staleness" (e.g., refreshing every 60 seconds), viral content requires Server-Driven Invalidation.
+
+
+Version/High-Water Mark: The server pushes a lightweight "Current Version" ID to the client via a live channel (like WebSockets). If the client’s version is lower, it knows it’s out of date and triggers a refresh.
+
+
+Direct Entity Updates: For extremely high-velocity items (like a post gaining thousands of reactions per second), the server pushes the specific update directly into the client's store, bypassing the need for a full feed refresh.
+
+ii. **Cross-Tab Consistency: The Mirror Problem**
+A user reacting to a post in one tab leaves all other open tabs showing "stale" data. To "harden" this, the Data Access Layer must synchronize these disparate views.
+
+BroadcastChannel: This browser API allows tabs to talk to each other. When Tab A performs a mutation (like a "Like"), it broadcasts the update. Tab B listens, identifies the affected postId, and updates its own Normalized Store.
+
+
+Web Locks API & Tab Leadership: To prevent "Self-inflicted DDoS," multiple tabs should not all poll the server simultaneously. Using the Web Locks API, the tabs "elect a leader". Only the leader tab maintains the live socket/polling connection; follower tabs simply read the updates from shared storage like IndexedDB.
+
+ii. **Optimistic Updates + Invalidation Signals**
+Optimistic updates make the UI feel instant in the current tab, but they do not automatically fix other tabs.
+
+The Workflow:
+
+User clicks "Like" in Tab A.
+
+Tab A performs an Optimistic Update locally.
+
+Tab A sends a signal via BroadcastChannel.
+
+Tab B receives the signal and updates its UI to match, ensuring both "mirrors" are consistent.
