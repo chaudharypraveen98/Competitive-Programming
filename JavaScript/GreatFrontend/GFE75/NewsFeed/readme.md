@@ -1,5 +1,8 @@
 ## [News Feed](https://www.greatfrontend.com/interviews/study/gfe75/questions/system-design/news-feed-facebook)
 
+> [!TIP]
+> View the [Architecture Diagrams](./architecture.md) for a visual overview of the system design.
+
 ### Requirements
 
 #### What are the core features to be supported?
@@ -592,3 +595,50 @@ Integrating A11y ensures that your Production-Grade UI is truly robust. By movin
 
 - **Practical Implementation**: Build a **Keyboard Navigation utility** that manages focus trapping inside a reaction menu.
 - **System Design**: Explore how **Virtualization** affects screen reader performance and how to maintain an accessible "live region" for new posts.
+
+#### Dynamic updates and motion
+
+Announce feed updates politely; motion should be opt-in
+A long-lived feed is a steady stream of state changes, and assistive-technology users bear the brunt of any noisy update strategy. aria-live="polite" for the new-posts banner plus quiet updates to accessible names for reaction counts is the standard middle ground, paired with prefers-reduced-motion handling so animations never become an accessibility tax.
+
+### Internationalization (i18n)
+
+1. Layout Resilience (RTL and Logical Properties)
+
+- Supporting right-to-left (RTL) scripts like Arabic or Hebrew requires more than just translating text; the entire UI "chrome" must be mirrored.
+- CSS Logical Properties: Instead of physical values like margin-left, use logical properties such as margin-inline-start, padding-inline, and inset-inline. This ensures that when the top-level dir="rtl" attribute is set, the layout flips automatically without custom overrides.
+- Directional Mirroring: Elements like avatar-then-name rows and composer toolbars should preserve their relative order by leveraging Flexbox or Grid, which respect the document direction.
+
+2. Text Rendering and Bidirectional Support
+   A "senior-grade" feed must handle posts that mix different scripts.
+
+- dir="auto": Apply this attribute to post-body containers. It allows the browser to intelligently pick the base direction of a paragraph from its first "strong" character, ensuring readable bidirectional text.
+- Unicode Bidirectional Algorithm: By setting the correct containers, you allow the browser's native algorithms to handle the complex rendering of embedded text runs.
+
+3. Localized Formatting and Pluralization
+
+- Hand-rolling pluralization logic (e.g., count === 1 ? 'like' : 'likes') is an architectural anti-pattern for global products.
+- Intl.PluralRules: Languages like Arabic have six plural forms, while Russian has three. Use the native Intl API combined with ICU MessageFormat strings to fetch the correct linguistic form from your translation pipeline.
+- Intl.NumberFormat: This ensures that counts like "103K" are formatted correctly for the locale, such as "103 тыс." in Russian or "10.3萬" in Chinese.
+- Intl.ListFormat: This utility correctly handles list conjunctions, transforming a list of names into "John, Mary, and 103K others" using the specific grammar rules of the user's language.
+
+### Telemetry and observability
+
+1. Advanced Engagement Tracking
+   Measuring how users interact with the feed requires sophisticated instrumentation that doesn't compromise performance:
+
+- Impression Tracking: Leverage the same IntersectionObserver used for virtualization to measure "viewability". A standard "impression" occurs when a post is at least 50% visible for one second.
+- Performance-Safe Reporting: To protect Interaction to Next Paint (INP), batch impression events and fire them lazily during visibilitychange or pagehide rather than synchronously during scroll.
+- Dwell Time: Track entry and exit timestamps per post to calculate dwell time, providing critical signals for ranking algorithms beyond simple clicks.
+
+2. Real-User Monitoring (RUM) and Error Handling
+   Understanding performance in the "wild" requires correlating technical metrics with user context:
+
+- Contextual Web Vitals: Break down Core Web Vitals (like LCP and INP) by device class, network type, and feature flags. This helps distinguish between a slow feed load due to a weak mobile network versus a regression in your reaction-click logic.
+- Tiered Error Reporting: Use a crash reporter (like Sentry) with an aggressive sampling strategy. On high-volume surfaces like the feed, sample only a small percentage of errors; on critical low-volume paths like Composer Submission, capture every error to ensure data integrity.
+
+3. Safe Deployment via Feature Flags
+   A product serving billions cannot risk global failures when deploying complex updates:
+
+- Gated Rollouts: Wrap new features—such as a new Virtualization strategy or an Offline Outbox—behind feature flags.
+- Incremental Ramping: Start with a small percentage of users and monitor INP and error rates before ramping up to the full population. The Data Access Layer is the ideal place to mediate these flags since it already controls the API surface.
