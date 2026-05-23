@@ -1,0 +1,5 @@
+## [107. `this` VI](https://bigfrontend.dev/quiz/this-VI)
+
+### Approach
+1. Arrow functions cannot be used to write object methods(for ex. update)as arrow functions simply borrow this from its lexically enclosing context, i.e. the this within the arrow is the one that was where you defined the object (in this case object b)
+2. So despite invoking update on the object a, this will refer to globalThis and globalThis.dev gets updated to bigfrontend.dev but a.dev remains the same
