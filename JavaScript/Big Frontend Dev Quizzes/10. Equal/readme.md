@@ -133,7 +133,7 @@ This quiz is the ultimate test of the **Abstract Equality Comparison Algorithm (
 ```mermaid
 graph TD
     A["[] == false"] -->|1. Coerce Boolean to Number| B["[] == 0"]
-    B -->|2. ToPrimitive of []| C["'' == 0"]
+    B -->|"2. ToPrimitive of []"| C["'' == 0"]
     C -->|3. Coerce String to Number| D["0 == 0"]
     D -->|4. Result| E["true"]
 ```
