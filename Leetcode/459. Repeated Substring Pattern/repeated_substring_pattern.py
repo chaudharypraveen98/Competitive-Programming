@@ -1,5 +1,5 @@
 class Solution:
-    def repeatedSubstringPattern(self, s: str) -> bool:
+    def repeatedSubstringPatternNaive(self, s: str) -> bool:
         max_step = len(s)//2
         for step in range(1,max_step+1):
             step_val = s[0:step]
@@ -11,6 +11,11 @@ class Solution:
             if(temp):
                 return True
         return False
+
+    def repeatedSubstringPattern(self, s: str) -> bool:
+        sliced_doubled_str = (s + s)[1:-1]
+        return s in sliced_doubled_str
+
 
 
 sol = Solution()
