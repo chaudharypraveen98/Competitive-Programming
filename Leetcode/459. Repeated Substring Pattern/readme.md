@@ -19,3 +19,75 @@ Given the string "abcabc":
 - First check with substring "a" - Does not form the original string.
 - Next, check with substring "ab" - Does not form the original string.
 - Finally, check with substring "abc" - Forms the original string. Hence, return True.
+
+
+### Approach 2 - KMP Approach
+Problem:
+
+```python
+return s in (s + s)[1:-1]
+```
+
+### Why?
+
+If:
+
+```text
+s = "abab"
+```
+
+then:
+
+```text
+s + s
+
+abababab
+```
+
+Remove first and last character:
+
+```text
+bababa
+```
+
+Contains:
+
+```text
+abab
+```
+
+### Intuition
+
+```text
+Repeated string
+    ↓
+Has a rotation equal to itself
+    ↓
+All rotations appear in s+s
+    ↓
+Remove trivial copies at ends
+    ↓
+Check if s still exists
+```
+
+### Example
+
+```text
+abab
+```
+
+Rotation by 2:
+
+```text
+abab
+```
+
+Same string.
+
+Therefore:
+
+```python
+s in (s + s)[1:-1]
+```
+
+returns True.
