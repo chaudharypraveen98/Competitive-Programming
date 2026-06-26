@@ -99,6 +99,62 @@ This quiz tests understanding of `Promise.all()` behavior, which aggregates mult
 * **Meaningful error messages**: When rejecting promises in a `Promise.all()` scenario, provide clear rejection reasons for easier debugging.
 
 ```javascript
+// Good practice: Using Promise.all() with proper error handling and allSettled for robustness
+const fetchUserData = async (userIds) => {
+  try {
+    // Fail-fast: If any fetch fails, the entire operation fails
+    const users = await Promise.all(userIds.map(id => fetch(`/api/users/${id}`)));
+    return await Promise.all(users.map(res => res.json()));
+  } catch (error) {
+    console.error('Failed to fetch users:', error);
+    throw error;
+  }
+};
+
+// Better for resilience: Using Promise.allSettled() to get all results
+const fetchUserDataResilient = async (userIds) => {
+  const results = await Promise.allSettled(userIds.map(id => fetch(`/api/users/${id}`)));
+  return results
+    .filter(r => r.status === 'fulfilled')
+    .map(r => r.value.json());
+};
+```
+
+---
+
+## 🧠 Revision Tips & Cheat Sheet
+
+### Visual Coercion Path / Logical Flow
+
+```mermaid
+graph TD
+    A["Promise.all() receives iterable"] --> B{"Is iterable empty?"}
+    B -->|Yes| C["Resolve immediately with []"]
+    B -->|No| D["Wrap non-promises via Promise.resolve()"]
+    D --> E{"Any promise rejects?"}
+    E -->|Yes| F["Reject with first rejection reason"]
+    E -->|No| G["Wait for all promises to settle"]
+    G --> H["Resolve with values array in original order"]
+    C --> I["Return fulfilled Promise"]
+    F --> J["Return rejected Promise"]
+    H --> I
+```
+
+---
+
+## 🔗 Helpful Resources
+
+- [ECMA-262 Specification - Promise.all()](https://tc39.es/ecma262/#sec-promise.all)
+- [MDN Web Docs - Promise.all()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise/all)
+- [BFE.dev - Quiz 23](https://bigfrontend.dev/quiz/Promise-all)
+
+---
+
+## 🏷️ Tags
+
+`#Promise` `#Promise.all()` `#Async` `#Concurrency` `#PromiseResolution` `#ErrorHandling` `#SpecDeepDive`
+
+```javascript
 // Good practice: explicit error handling
 Promise.all([promise1, promise2, promise3])
   .then(
