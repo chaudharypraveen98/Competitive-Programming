@@ -39,25 +39,29 @@ class Graph:
 def has_cycle_undirected(graph):
     """
     Return True if the UNDIRECTED graph contains a cycle, else False.
-    Hint: DFS with parent-tracking. Handle disconnected graphs.
+    Uses DFS with parent-tracking and visited set.
     """
     visited = set()
-    def dfs(node, stack=None, parent =None):
-        if stack is None:
-            stack = set()
+
+    def dfs(node, parent=None):
         visited.add(node)
 
-        stack.add(node)
         for neighbour in graph.adjacent_list[node]:
-            if neighbour in stack and parent!= neighbour:
+            # If neighbour is visited and NOT the parent, we found a cycle!
+            if neighbour in visited and neighbour != parent:
                 return True
-            if neighbour not in visited and dfs(neighbour, stack, node):
+            
+            # Recurse for unvisited neighbours
+            if neighbour not in visited and dfs(neighbour, node):
                 return True
-        stack.remove(node)
+
         return False
+
+    # Outer loop handles disconnected components
     for vertex in graph.adjacent_list:
         if vertex not in visited and dfs(vertex):
             return True
+
     return False
 
 # ---------------------------------------------------------
