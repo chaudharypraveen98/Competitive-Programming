@@ -1,6 +1,28 @@
 import heapq
 class Solution:
     def minCostConnectPoints(self, points: List[List[int]]) -> int:
+            n = len(points)
+            visited = [False]*n
+            total_cost = 0
+            min_distance = [float('inf') for i in range(n)]
+            min_distance[0] = 0
+
+            for _ in range(n):
+                u = -1
+                for j in range(n):
+                    if not visited[j] and (u==-1 or min_distance[j]<min_distance[u]):
+                        u = j
+                total_cost += min_distance[u]
+                visited[u] = True
+                x1,y1 = points[u]
+                for v in range(n):
+                    if not visited[v]:
+                        x2,y2 = points[v]
+                        distance = abs(x1-x2)+abs(y1-y2)
+                        if distance < min_distance[v]:
+                            min_distance[v] = distance
+            return total_cost
+    def minCostConnectPoints1(self, points: List[List[int]]) -> int:
         n = len(points)
         adjacent_list = {v:{} for v in range(n)}
         for i in range(n):
