@@ -211,5 +211,15 @@ Please add your name in the list in the following format:
 - SakuraWhisper - [C++ - Pointer](C%2B%2B/Hackerrank/Pointer)
 - [lenny-ts](https://github.com/lenny-ts) - [Python - Write A Function](Python/Hackerrank/Write%20a%20function/solution.py)
 - [lenny-ts](https://github.com/lenny-ts) - [Python - Classes Dealing with Complex Numbers](Python/Hackerrank/Classes%20Dealing%20with%20Complex%20Numbers/classes_dealing_with_complex_numbers.py)
+- [lenny-ts](https://github.com/lenny-ts) - [Python - Zeros and Ones](Python/Hackerrank/Zeros%20and%20Ones/zeros_and_ones.py)
+- [lenny-ts](https://github.com/lenny-ts) - [Python - XML2 Find the Maximum Depth](Python/Hackerrank/XML2%20Find%20the%20Maximum%20Depth/xml_2_find_the_maximum_depth.py)
+- [lenny-ts](https://github.com/lenny-ts) - [Python - XML 1 - Find the Score](Python/Hackerrank/XML%201%20-%20Find%20the%20Score/xml_1__find_the_score.py)
+- [lenny-ts](https://github.com/lenny-ts) - [Python - What's Your Name](Python/Hackerrank/What%20s%20Your%20Name/whats_your_name.py)
+- [lenny-ts](https://github.com/lenny-ts) - [Python - Validating UID](Python/Hackerrank/Validating%20UID/validating_uid.py)
+- [lenny-ts](https://github.com/lenny-ts) - [Python - Validating Roman Numerals](Python/Hackerrank/Validating%20Roman%20Numerals/validating_roman_numerals.py)
+- [lenny-ts](https://github.com/lenny-ts) - [Python - Validating Postal Codes](Python/Hackerrank/Validating%20Postal%20Codes/validating_postal_codes.py)
+- [lenny-ts](https://github.com/lenny-ts) - [Python - Validating phone numbers](Python/Hackerrank/Validating%20phone%20numbers/validating_phone_numbers.py)
+- [lenny-ts](https://github.com/lenny-ts) - [Python - Validating Email Addresses With a Filter](Python/Hackerrank/Validating%20Email%20Addresses%20With%20a%20Filter/validating_email_addresses_with_a_filter.py)
+- [lenny-ts](https://github.com/lenny-ts) - [Python - Validating Credit Card Numbers](Python/Hackerrank/Validating%20Credit%20Card%20Numbers/validating_credit_card_numbers.py)
 
 
