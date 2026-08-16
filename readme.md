@@ -210,5 +210,6 @@ Please add your name in the list in the following format:
 - SakuraWhisper - [C++ - Structs](C%2B%2B/Hackerrank/Structs)
 - SakuraWhisper - [C++ - Pointer](C%2B%2B/Hackerrank/Pointer)
 - [lenny-ts](https://github.com/lenny-ts) - [Python - Write A Function](Python/Hackerrank/Write%20a%20function/solution.py)
+- [lenny-ts](https://github.com/lenny-ts) - [Python - Classes Dealing with Complex Numbers](Python/Hackerrank/Classes%20Dealing%20with%20Complex%20Numbers/classes_dealing_with_complex_numbers.py)
 
 
