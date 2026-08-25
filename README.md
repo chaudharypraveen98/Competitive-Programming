@@ -221,5 +221,6 @@ Please add your name in the list in the following format:
 - [lenny-ts](https://github.com/lenny-ts) - [Python - Validating phone numbers](Python/Hackerrank/Validating%20phone%20numbers/validating_phone_numbers.py)
 - [lenny-ts](https://github.com/lenny-ts) - [Python - Validating Email Addresses With a Filter](Python/Hackerrank/Validating%20Email%20Addresses%20With%20a%20Filter/validating_email_addresses_with_a_filter.py)
 - [lenny-ts](https://github.com/lenny-ts) - [Python - Validating Credit Card Numbers](Python/Hackerrank/Validating%20Credit%20Card%20Numbers/validating_credit_card_numbers.py)
+- [lenny-ts](https://github.com/lenny-ts) - [Python - Decorators 2 - Name Directory](Python/Hackerrank/Decorators%202%20-%20Name%20Directory/decorators_2__name_directory.py)
 
 
