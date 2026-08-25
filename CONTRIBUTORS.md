@@ -1,0 +1,133 @@
+# 🙌 Contributors
+
+A huge thank you to everyone who has contributed to [Competitive Programming](./README.md)! 🎉
+
+| Contributor | Problems Solved |
+| ----------- | --------------- |
+| [Praveen Chaudhary](https://github.com/chaudharypraveen98) | 1 |
+| [lenny-ts](https://github.com/lenny-ts) | 103 |
+| [SakuraWhisper](https://github.com/SakuraWhisper) | 4 |
+
+> 💡 Want to be added here? Check out the [contribution guide](./README.md#-how-to-contribute) and open your first Pull Request!
+
+<details>
+<summary>📋 View the full list of contributed solutions</summary>
+
+**[Praveen Chaudhary](https://github.com/chaudharypraveen98)**
+
+- [Athlete Sort](Python/Hackerrank/Athlete%20Sort)
+
+**[lenny-ts](https://github.com/lenny-ts)**
+
+- [Java - Java Substring](Java/Hackerrank/Java%20Substring)
+- [Java - Java Substring Comparison](Java/Hackerrank/Java%20Substring%20Comparisons)
+- [Java - Java String Introduction](Java/Hackerrank/Java%20Strings%20Introduction)
+- [Java - Java String Reverse](Java/Hackerrank/Java%20String%20Reverse)
+- [Java - Java Anagrams](Java/Hackerrank/Java%20Anagrams)
+- [Java - Java String Tokens](Java/Hackerrank/Java%20String%20Tokens)
+- [Java - Pattern Syntax Checker](Java/Hackerrank/Pattern%20Syntax%20Checker)
+- [Java - Valid Username Regular Expression](Java/Hackerrank/Valid%20Username%20Regular%20Expression)
+- [Java - Welcome to Java](Java/Hackerrank/Welcome%20to%20Java)
+- [Java - Can You Access](Java/Hackerrank/Can%20You%20Access)
+- [Java - Covariant Return Types](Java/Hackerrank/Covariant%20Return%20Types)
+- [Java - Java Abstract Class](Java/Hackerrank/Java%20Abstract%20Class)
+- [Java - Java Annotations](Java/Hackerrank/Java%20Annotations)
+- [Java - Java Arraylist](Java/Hackerrank/Java%20Arraylist)
+- [Java - Java BigDecimal](Java/Hackerrank/Java%20BigDecimal)
+- [Java - Java BigInteger](Java/Hackerrank/Java%20BigInteger)
+- [Java - Java BitSet](Java/Hackerrank/Java%20BitSet)
+- [Java - Java Comparator](Java/Hackerrank/Java%20Comparator)
+- [Java - Java Currency Formatter](Java/Hackerrank/Java%20Currency%20Formatter)
+- [Java - Java Datatypes](Java/Hackerrank/Java%20Datatypes)
+- [Java - Java Data and Time](Java/Hackerrank/Java%20Date%20and%20Time)
+- [Java - Java Dequeue](Java/Hackerrank/Java%20Dequeue)
+- [Java - Java End of file](Java/Hackerrank/Java%20End%20of%20file)
+- [Java - Tag Content Extractor](Java/Hackerrank/Tag%20Content%20Extractor)
+- [Java - Java Primality Test](Java/Hackerrank/Java%20Primality%20Test)
+- [Java - Java 1D Array](Java/Hackerrank/Java%201D%20Array)
+- [Java - Java 2D Array](Java/Hackerrank/Java%202D%20Array)
+- [Java - Java Subarray](Java/Hackerrank/Java%20Subarray)
+- [Java - Java 1D Array Part 2](Java/Hackerrank/Java%201D%20Array%20Part%202)
+- [Java - Java List](Java/Hackerrank/Java%20List)
+- [Java - Java Map](Java/Hackerrank/Java%20Map)
+- [Java - Java Stack](Java/Hackerrank/Java%20Stack)
+- [Java - Java Hashset](Java/Hackerrank/Java%20Hashset)
+- [Java - Java Generics](Java/Hackerrank/Java%20Generics)
+- [Java - Java Sort](Java/Hackerrank/Java%20Sort)
+- [Java - Java Inheritance I](Java/Hackerrank/Java%20Inheritance%20I)
+- [Java - Java Inheritance II](Java/Hackerrank/Java%20Inheritance%20II)
+- [Java - Java Interface](Java/Hackerrank/Java%20Interface)
+- [Java - Java Priority Queue](Java/Hackerrank/Java%20Priority%20Queue)
+- [Java - Java Regex 2 Duplicate Words](Java/Hackerrank/Java%20Regex%202%20Duplicate%20Words)
+- [Java - Java Method Overriding](Java/Hackerrank/Java%20Method%20Overriding)
+- [Java - Java Method Overriding 2 Super Keyword](Java/Hackerrank/Java%20Method%20Overriding%202%20Super%20Keyword)
+- [Java - Java Instanceof Keyword](Java/Hackerrank/Java%20Instanceof%20keyword)
+- [Java - Java Iterator](Java/Hackerrank/Java%20Iterator)
+- [Java - Lambda Expressions](Java/Hackerrank/Java%20Lambda%20Expressions)
+- [Java - Java MD5](Java/Hackerrank/Java%20MD5)
+- [Java - Java Exception Handling Try Catch](Java/Hackerrank/Java%20Exception%20Handling%20Try%20catch)
+- [Java - Java Exception Handling](Java/Hackerrank/Java%20Exception%20Handling)
+- [Java - Java Reflection Attributes](Java/Hackerrank/Java%20Reflection%20Attributes)
+- [Java - Prime Checker](Java/Hackerrank/Prime%20Checker)
+- [Java - Java Factory Pattern](Java/Hackerrank/Java%20Factory%20Pattern)
+- [Java - Java Singleton Pattern](Java/Hackerrank/Java%20Singleton%20Pattern)
+- [Java - Java Visitor Pattern](Java/Hackerrank/Java%20Visitor%20Pattern)
+- [Java - Java Varargs Simple Addition](Java/Hackerrank/Java%20Varargs%20Simple%20Addition)
+- [C - Hello World in C](C/Hackerrank/Hello%20World%20in%20C)
+- [C - Playing With Characters](C/Hackerrank/Playing%20With%20Characters)
+- [C - Sum and Difference of Two Numbers](C/Hackerrank/Sum%20and%20Difference%20of%20Two%20Numbers)
+- [Java - Java if-else](Java/Hackerrank/Java%20If%20Else)
+- [Java - Java int to String](Java/Hackerrank/Java%20Int%20to%20String)
+- [Java - Java Loops I](Java/Hackerrank/Java%20Loops%20I)
+- [Java - Java loops II](Java/Hackerrank/Java%20Loops%20II)
+- [Java - Java Output Formatting](Java/Hackerrank/Java%20Output%20Formatting)
+- [Java - Java Regex](Java/Hackerrank/Java%20Regex)
+- [Java - Java SHA 256](Java/Hackerrank/Java%20SHA%20256)
+- [Java - Java Static Initializer Block](Java/Hackerrank/Java%20Static%20Initializer%20Block)
+- [Java - Java Stdin and Stdout I](Java/Hackerrank/Java%20Stdin%20and%20Stdout%20I)
+- [Java - Java Stdin and Stdout II](Java/Hackerrank/Java%20Stdin%20and%20Stdout%20II)
+- [C - Funcitons in C](C/Hackerrank/Functions%20in%20C)
+- [C - Pointers in C](C/Hackerrank/Pointers%20in%20C)
+- [C - Conditional Statements in C](C/Hackerrank/Conditional%20Statements%20in%20C)
+- [C - For loop in C](C/Hackerrank/For%20Loop%20in%20C)
+- [C - Sum of Digits of a Five Digit Number](C/Hackerrank/Sum%20of%20Digits%20of%20a%20Five%20Digit%20Number)
+- [C - Bitwise Operators](C/Hackerrank/Bitwise%20Operators)
+- [C - Printing Pattern Using Loops](C/Hackerrank/Printing%20Pattern%20Using%20Loops)
+- [C - 1D Arrays in C](C/Hackerrank/1D%20Arrays%20in%20C)
+- [C - Array Reversal](C/Hackerrank/Array%20Reversal)
+- [C - Printing Tokens](C/Hackerrank/Printing%20Tokens)
+- [C - Digit Frequency](C/Hackerrank/Digit%20Frequency)
+- [C - Dynamic Array in C](C/Hackerrank/Dynamic%20Array%20in%20C)
+- [C - Boxes through a Tunnel](C/Hackerrank/Boxes%20through%20a%20Tunnel)
+- [C - Calculate the Nth term](C/Hackerrank/Calculate%20the%20Nth%20term)
+- [C - Permutations of Strings](C/Hackerrank/Permutations%20of%20Strings)
+- [C - Post Transition](C/Hackerrank/Post%20Transition)
+- [C - Querying the Document](C/Hackerrank/Querying%20the%20Document)
+- [C - Small Triangles Large Triangles](C/Hackerrank/Small%20Triangles%20Large%20Triangles)
+- [C - Sorting Array of Strings](C/Hackerrank/Sorting%20Array%20of%20Strings)
+- [C - Structuring the Document](C/Hackerrank/Structuring%20the%20Document)
+- [C - Students Marks Sum](C/Hackerrank/Students%20Marks%20Sum)
+- [C - Variadic functions in C](C/Hackerrank/Variadic%20functions%20in%20C)
+- [C++ - Say Hello World in C ](C++/Hackerrank/Say%20Hello%20World%20With%20C)
+- [Python - Write A Function](Python/Hackerrank/Write%20a%20function/solution.py)
+- [Python - Classes Dealing with Complex Numbers](Python/Hackerrank/Classes%20Dealing%20with%20Complex%20Numbers/classes_dealing_with_complex_numbers.py)
+- [Python - Zeros and Ones](Python/Hackerrank/Zeros%20and%20Ones/zeros_and_ones.py)
+- [Python - XML2 Find the Maximum Depth](Python/Hackerrank/XML2%20Find%20the%20Maximum%20Depth/xml_2_find_the_maximum_depth.py)
+- [Python - XML 1 - Find the Score](Python/Hackerrank/XML%201%20-%20Find%20the%20Score/xml_1__find_the_score.py)
+- [Python - What's Your Name](Python/Hackerrank/What%20s%20Your%20Name/whats_your_name.py)
+- [Python - Validating UID](Python/Hackerrank/Validating%20UID/validating_uid.py)
+- [Python - Validating Roman Numerals](Python/Hackerrank/Validating%20Roman%20Numerals/validating_roman_numerals.py)
+- [Python - Validating Postal Codes](Python/Hackerrank/Validating%20Postal%20Codes/validating_postal_codes.py)
+- [Python - Validating phone numbers](Python/Hackerrank/Validating%20phone%20numbers/validating_phone_numbers.py)
+- [Python - Validating Email Addresses With a Filter](Python/Hackerrank/Validating%20Email%20Addresses%20With%20a%20Filter/validating_email_addresses_with_a_filter.py)
+- [Python - Validating Credit Card Numbers](Python/Hackerrank/Validating%20Credit%20Card%20Numbers/validating_credit_card_numbers.py)
+- [Python - Decorators 2 - Name Directory](Python/Hackerrank/Decorators%202%20-%20Name%20Directory/decorators_2__name_directory.py)
+
+**[SakuraWhisper](https://github.com/SakuraWhisper)**
+
+- [C++ - For Loop](C%2B%2B/Hackerrank/For%20Loop)
+- [C++ - Vector Sort](C%2B%2B/Hackerrank/Vector%20Sort)
+- [C++ - Structs](C%2B%2B/Hackerrank/Structs)
+- [C++ - Pointer](C%2B%2B/Hackerrank/Pointer)
+
+</details>
