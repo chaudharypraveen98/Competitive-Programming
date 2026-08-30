@@ -1,4 +1,6 @@
 ## [803. Bricks Falling When Hit](https://leetcode.com/problems/bricks-falling-when-hit/description/)
+Before approaching it, you should try [2382. Maximum Segment Sum After Removals](../2382.%20Maximum%20Segment%20Sum%20After%20Removals/)
+
 
 ### Approach
 1. Reverse-Time Simulation: Adding elements (Union-Find) is O(alpha(N)), 
